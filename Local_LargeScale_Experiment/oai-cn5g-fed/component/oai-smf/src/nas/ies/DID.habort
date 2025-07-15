@@ -1,0 +1,19 @@
+#ifndef __DID_H_
+#define __DID_H_
+
+#include <stdint.h>
+#include "bstrlib.h"
+#include <string>
+
+#define DID_MINIMUM_LENGTH 1
+#define DID_MAXIMUM_LENGTH 74
+
+typedef struct {
+    std::string did_value;
+
+} DID;
+
+int encode_did(DID did, uint8_t iei, uint8_t* buffer, uint32_t len);
+int decode_did(DID* did, uint8_t iei, uint8_t* buffer, uint32_t len);
+
+#endif

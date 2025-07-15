@@ -1,0 +1,59 @@
+## 启动区块链
+无需多言
+
+
+## 启动didserver
+
+修改监听的端口号，在代码最下面
+因为vscode中go run main.go 会找不到进程号
+所以需要先go build main.go, 生成main的可执行文件，修改可执行文件名称后， ./ 就能执行
+
+
+## 启动核心网
+文件夹    cd ~/oai-test-单机/oai-cn5g-fed/docker-compose
+使用这个代码启动
+python3 core-network.py --type start-basic --scenario 1
+
+！！每次关闭核心网要使用
+python3 core-network.py --type stop-basic --scenario 1
+
+
+## UE这边要修改 /openair3/UICC/usim_interface.c 里的
+"imsi",             "USIM IMSI\n",          0,         .strptr=&uicc->imsiStr,              .defstrval="208950000000031",           TYPE_STRING,    0 }, \
+
+.defstrval="208950000000031", 
+这个要改成这个ue启动的imsi，密钥和opc也可以对一下，在核心网的databse
+
+## targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf 里面
+
+    ////////// AMF parameters:
+    # amf_ip_address = ({ ipv4 = "192.168.70.132"; });
+    # lee240625
+    amf_ip_address      = ( { ipv4       = "192.168.70.132";
+                              ipv6       = "192:168:30::17";
+                              active     = "yes";
+                              preference = "ipv4";
+                            }
+                          );
+                          
+                          这里面要和核心网的信息对一下，不然gnb无法连接核心网
+                          
+## 做完基站ue这边的调整就可以build 基站和ue了
+
+cd ~/openairinterface5g/cmake_targets
+./build_oai -w USRP --ninja --nrUE --gNB --build-lib "nrscope" -C
+
+## 启动基站
+cd ~/oai-test-单机/openairinterface5g/cmake_targets/ran_build/build
+sudo ./nr-softmodem -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf --gNBs.[0].min_rxtxtime 6 --rfsim --sa
+
+关闭就control+c就好
+
+## 启动UE
+（得先修改里面，发送给didserver的端口号）
+然后就开一个新的终端
+cd ~/oai-test-单机/openairinterface5g/cmake_targets/ran_build/build
+
+
+！！！每个--uicc0.imsi 208950000000031，每个都得不同。208950000000031～208950000000131
+sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --sa --uicc0.imsi 208950000000031 --rfsim

@@ -1,0 +1,5 @@
+[2025-05-26 16:50:34] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn inbound conn ef8ed1ed58aedc84 [::1]:50136 failed checkpoint posthandshake: Connected to self
+[2025-05-26 16:50:34] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn dyn dial conn ef8ed1ed58aedc84 [::1]:20138 failed checkpoint posthandshake: Connected to self
+[2025-05-26 16:50:34] [warning] server.go:553 p3Chain/p2p/server.(*Server).encHandshakeChecks 进行加密handshake: 节点已经与本机建立了连接
+
+[2025-05-26 16:50:34] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn inbound conn ff18a33ef7d83d5a [::1]:50152 failed checkpoint posthandshake: Already connected

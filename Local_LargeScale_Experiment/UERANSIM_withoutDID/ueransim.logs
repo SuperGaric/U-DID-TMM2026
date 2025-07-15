@@ -1,0 +1,714 @@
+Now setting these variables '@GTP_IP@ @IGNORE_STREAM_IDS@ @LINK_IP@ @MCC@ @MNC@ @NCI@ @NGAP_IP@ @NGAP_PEER_IP@ @SD@ @SST@ @TAC@'
+Now setting these variables '@AMF_VALUE@ @APN@ @GNB_IP_ADDRESS@ @IMEI@ @IMEI_SV@ @IMSI@ @KEY@ @MCC@ @MNC@ @OP@ @OP_TYPE@ @PDU_TYPE@ @SD@ @SD_C@ @SD_D@ @SST@ @SST_C@ @SST_D@'
+Done setting the configuration
+### Running ueransim ###
+Running gnb
+UERANSIM v3.2.5
+[2024-12-20 15:18:35.365] [sctp] [info] Trying to establish SCTP connection... (192.168.70.132:38412)
+[2024-12-20 15:18:35.367] [sctp] [info] SCTP connection established (192.168.70.132:38412)
+[2024-12-20 15:18:35.367] [sctp] [debug] SCTP association setup ascId[15]
+[2024-12-20 15:18:35.367] [ngap] [debug] Sending NG Setup Request
+[2024-12-20 15:18:35.368] [ngap] [debug] NG Setup Response received
+[2024-12-20 15:18:35.368] [ngap] [info] NG Setup procedure is successful
+Running ue
+UERANSIM v3.2.5
+[2024-12-20 15:18:36.359] [208950000000039|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2024-12-20 15:18:36.359] [208950000000038|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2024-12-20 15:18:36.359] [rrc] [debug] UE[1] new signal detected
+[2024-12-20 15:18:36.360] [208950000000039|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2024-12-20 15:18:36.360] [rrc] [debug] UE[2] new signal detected
+[2024-12-20 15:18:36.360] [208950000000039|nas] [info] Selected plmn[208/95]
+[2024-12-20 15:18:36.360] [208950000000039|rrc] [info] Selected cell plmn[208/95] tac[40960] category[SUITABLE]
+[2024-12-20 15:18:36.360] [208950000000039|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:36.360] [208950000000039|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2024-12-20 15:18:36.360] [208950000000039|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2024-12-20 15:18:36.360] [208950000000039|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:18:36.360] [208950000000039|nas] [debug] Sending Initial Registration
+[2024-12-20 15:18:36.360] [208950000000031|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2024-12-20 15:18:36.360] [208950000000038|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2024-12-20 15:18:36.360] [208950000000039|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:18:36.360] [208950000000038|nas] [info] Selected plmn[208/95]
+[2024-12-20 15:18:36.360] [208950000000039|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:18:36.360] [208950000000038|rrc] [info] Selected cell plmn[208/95] tac[40960] category[SUITABLE]
+[2024-12-20 15:18:36.360] [208950000000038|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:36.360] [208950000000038|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2024-12-20 15:18:36.360] [rrc] [debug] UE[3] new signal detected
+[2024-12-20 15:18:36.360] [208950000000038|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2024-12-20 15:18:36.360] [208950000000038|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:18:36.360] [208950000000038|nas] [debug] Sending Initial Registration
+[2024-12-20 15:18:36.360] [208950000000038|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:18:36.360] [208950000000038|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:18:36.360] [208950000000040|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2024-12-20 15:18:36.360] [208950000000031|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2024-12-20 15:18:36.360] [rrc] [info] RRC Setup for UE[1]
+[2024-12-20 15:18:36.360] [rrc] [info] RRC Setup for UE[2]
+[2024-12-20 15:18:36.360] [208950000000031|nas] [info] Selected plmn[208/95]
+[2024-12-20 15:18:36.360] [208950000000031|rrc] [info] Selected cell plmn[208/95] tac[40960] category[SUITABLE]
+[2024-12-20 15:18:36.360] [208950000000039|rrc] [info] RRC connection established
+[2024-12-20 15:18:36.360] [208950000000039|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:18:36.360] [208950000000031|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:36.360] [rrc] [debug] UE[4] new signal detected
+[2024-12-20 15:18:36.360] [208950000000031|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2024-12-20 15:18:36.360] [208950000000031|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2024-12-20 15:18:36.360] [208950000000039|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:18:36.360] [208950000000038|rrc] [info] RRC connection established
+[2024-12-20 15:18:36.360] [208950000000038|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:18:36.360] [208950000000038|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:18:36.360] [208950000000031|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:18:36.360] [208950000000031|nas] [debug] Sending Initial Registration
+[2024-12-20 15:18:36.360] [208950000000031|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:18:36.360] [208950000000031|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:18:36.360] [ngap] [debug] Initial NAS message received from UE[2]
+[2024-12-20 15:18:36.360] [ngap] [debug] Initial NAS message received from UE[1]
+[2024-12-20 15:18:36.360] [208950000000033|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2024-12-20 15:18:36.360] [rrc] [info] RRC Setup for UE[3]
+[2024-12-20 15:18:36.360] [208950000000040|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2024-12-20 15:18:36.360] [208950000000031|rrc] [info] RRC connection established
+[2024-12-20 15:18:36.360] [208950000000031|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:18:36.360] [208950000000031|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:18:36.360] [208950000000040|nas] [info] Selected plmn[208/95]
+[2024-12-20 15:18:36.360] [208950000000040|rrc] [info] Selected cell plmn[208/95] tac[40960] category[SUITABLE]
+[2024-12-20 15:18:36.360] [208950000000040|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:36.360] [208950000000040|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2024-12-20 15:18:36.360] [208950000000040|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2024-12-20 15:18:36.360] [rrc] [debug] UE[5] new signal detected
+[2024-12-20 15:18:36.360] [ngap] [debug] Initial NAS message received from UE[3]
+[2024-12-20 15:18:36.360] [208950000000040|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:18:36.360] [208950000000040|nas] [debug] Sending Initial Registration
+[2024-12-20 15:18:36.360] [208950000000040|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:18:36.360] [208950000000035|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2024-12-20 15:18:36.360] [208950000000033|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2024-12-20 15:18:36.360] [208950000000033|nas] [info] Selected plmn[208/95]
+[2024-12-20 15:18:36.361] [208950000000033|rrc] [info] Selected cell plmn[208/95] tac[40960] category[SUITABLE]
+[2024-12-20 15:18:36.361] [208950000000033|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:36.361] [208950000000033|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2024-12-20 15:18:36.361] [208950000000033|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2024-12-20 15:18:36.361] [208950000000033|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:18:36.361] [208950000000033|nas] [debug] Sending Initial Registration
+[2024-12-20 15:18:36.361] [208950000000033|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:18:36.361] [rrc] [debug] UE[6] new signal detected
+[2024-12-20 15:18:36.361] [208950000000033|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:18:36.361] [208950000000037|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2024-12-20 15:18:36.361] [208950000000035|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2024-12-20 15:18:36.361] [rrc] [info] RRC Setup for UE[5]
+[2024-12-20 15:18:36.361] [208950000000035|nas] [info] Selected plmn[208/95]
+[2024-12-20 15:18:36.361] [208950000000035|rrc] [info] Selected cell plmn[208/95] tac[40960] category[SUITABLE]
+[2024-12-20 15:18:36.361] [208950000000035|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:36.361] [208950000000035|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2024-12-20 15:18:36.361] [208950000000035|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2024-12-20 15:18:36.361] [208950000000035|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:18:36.361] [208950000000035|nas] [debug] Sending Initial Registration
+[2024-12-20 15:18:36.361] [208950000000033|rrc] [info] RRC connection established
+[2024-12-20 15:18:36.361] [208950000000033|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:18:36.361] [208950000000035|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:18:36.361] [208950000000035|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:18:36.361] [208950000000033|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:18:36.361] [208950000000032|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2024-12-20 15:18:36.361] [rrc] [debug] UE[7] new signal detected
+[2024-12-20 15:18:36.361] [208950000000037|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2024-12-20 15:18:36.361] [rrc] [info] RRC Setup for UE[6]
+[2024-12-20 15:18:36.361] [208950000000037|nas] [info] Selected plmn[208/95]
+[2024-12-20 15:18:36.361] [ngap] [debug] Initial NAS message received from UE[5]
+[2024-12-20 15:18:36.361] [rrc] [debug] UE[8] new signal detected
+[2024-12-20 15:18:36.361] [208950000000037|rrc] [info] Selected cell plmn[208/95] tac[40960] category[SUITABLE]
+[2024-12-20 15:18:36.361] [208950000000032|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2024-12-20 15:18:36.361] [208950000000037|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:36.361] [208950000000037|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2024-12-20 15:18:36.361] [208950000000037|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2024-12-20 15:18:36.361] [208950000000034|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2024-12-20 15:18:36.361] [208950000000037|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:18:36.361] [208950000000037|nas] [debug] Sending Initial Registration
+[2024-12-20 15:18:36.361] [208950000000035|rrc] [info] RRC connection established
+[2024-12-20 15:18:36.361] [208950000000035|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:18:36.361] [208950000000035|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:18:36.361] [208950000000037|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:18:36.361] [208950000000037|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:18:36.361] [ngap] [debug] Initial NAS message received from UE[6]
+[2024-12-20 15:18:36.361] [rrc] [info] RRC Setup for UE[7]
+[2024-12-20 15:18:36.361] [208950000000032|nas] [info] Selected plmn[208/95]
+[2024-12-20 15:18:36.361] [rrc] [debug] UE[9] new signal detected
+[2024-12-20 15:18:36.361] [208950000000032|rrc] [info] Selected cell plmn[208/95] tac[40960] category[SUITABLE]
+[2024-12-20 15:18:36.361] [208950000000032|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:36.361] [208950000000032|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2024-12-20 15:18:36.361] [208950000000032|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2024-12-20 15:18:36.361] [208950000000032|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:18:36.361] [208950000000032|nas] [debug] Sending Initial Registration
+[2024-12-20 15:18:36.361] [208950000000036|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2024-12-20 15:18:36.361] [208950000000032|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:18:36.361] [208950000000032|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:18:36.361] [208950000000037|rrc] [info] RRC connection established
+[2024-12-20 15:18:36.361] [208950000000037|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:18:36.361] [208950000000034|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2024-12-20 15:18:36.361] [208950000000040|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:18:36.362] [rrc] [debug] UE[10] new signal detected
+[2024-12-20 15:18:36.362] [208950000000037|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:18:36.362] [rrc] [info] RRC Setup for UE[8]
+[2024-12-20 15:18:36.362] [208950000000034|nas] [info] Selected plmn[208/95]
+[2024-12-20 15:18:36.362] [ngap] [debug] Initial NAS message received from UE[7]
+[2024-12-20 15:18:36.362] [208950000000036|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2024-12-20 15:18:36.362] [208950000000034|rrc] [info] Selected cell plmn[208/95] tac[40960] category[SUITABLE]
+[2024-12-20 15:18:36.362] [208950000000034|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:36.362] [208950000000034|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2024-12-20 15:18:36.362] [208950000000034|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2024-12-20 15:18:36.362] [rrc] [info] RRC Setup for UE[4]
+[2024-12-20 15:18:36.362] [208950000000034|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:18:36.362] [208950000000034|nas] [debug] Sending Initial Registration
+[2024-12-20 15:18:36.362] [208950000000034|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:18:36.362] [208950000000034|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:18:36.362] [208950000000032|rrc] [info] RRC connection established
+[2024-12-20 15:18:36.362] [208950000000032|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:18:36.362] [208950000000032|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:18:36.362] [208950000000040|rrc] [info] RRC connection established
+[2024-12-20 15:18:36.362] [208950000000040|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:18:36.362] [208950000000040|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:18:36.362] [208950000000036|nas] [info] Selected plmn[208/95]
+[2024-12-20 15:18:36.362] [208950000000036|rrc] [info] Selected cell plmn[208/95] tac[40960] category[SUITABLE]
+[2024-12-20 15:18:36.362] [208950000000036|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:36.362] [208950000000036|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2024-12-20 15:18:36.362] [208950000000036|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2024-12-20 15:18:36.362] [208950000000036|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:18:36.362] [208950000000036|nas] [debug] Sending Initial Registration
+[2024-12-20 15:18:36.362] [ngap] [debug] Initial NAS message received from UE[8]
+[2024-12-20 15:18:36.362] [rrc] [info] RRC Setup for UE[9]
+[2024-12-20 15:18:36.362] [ngap] [debug] Initial NAS message received from UE[4]
+[2024-12-20 15:18:36.362] [208950000000036|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:18:36.362] [208950000000036|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:18:36.362] [208950000000034|rrc] [info] RRC connection established
+[2024-12-20 15:18:36.362] [208950000000034|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:18:36.362] [208950000000034|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:18:36.362] [rrc] [info] RRC Setup for UE[10]
+[2024-12-20 15:18:36.362] [ngap] [debug] Initial NAS message received from UE[9]
+[2024-12-20 15:18:36.362] [208950000000036|rrc] [info] RRC connection established
+[2024-12-20 15:18:36.362] [208950000000036|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:18:36.362] [208950000000036|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:18:36.362] [ngap] [debug] Initial NAS message received from UE[10]
+[2024-12-20 15:18:36.391] [208950000000038|nas] [debug] Authentication Request received
+[2024-12-20 15:18:36.402] [208950000000039|nas] [debug] Authentication Request received
+[2024-12-20 15:18:36.410] [208950000000031|nas] [debug] Authentication Request received
+[2024-12-20 15:18:36.421] [208950000000033|nas] [debug] Authentication Request received
+[2024-12-20 15:18:36.431] [208950000000035|nas] [debug] Authentication Request received
+[2024-12-20 15:18:36.438] [208950000000037|nas] [debug] Authentication Request received
+[2024-12-20 15:18:36.446] [208950000000032|nas] [debug] Authentication Request received
+[2024-12-20 15:18:36.456] [208950000000040|nas] [debug] Authentication Request received
+[2024-12-20 15:18:36.466] [208950000000034|nas] [debug] Authentication Request received
+[2024-12-20 15:18:36.474] [208950000000036|nas] [debug] Authentication Request received
+[2024-12-20 15:18:36.483] [208950000000038|nas] [debug] Security Mode Command received
+[2024-12-20 15:18:36.483] [208950000000038|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:18:36.483] [208950000000038|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:18:36.486] [208950000000039|nas] [debug] Security Mode Command received
+[2024-12-20 15:18:36.486] [208950000000039|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:18:36.486] [208950000000039|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:18:36.490] [208950000000031|nas] [debug] Security Mode Command received
+[2024-12-20 15:18:36.490] [208950000000031|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:18:36.490] [208950000000031|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:18:36.493] [208950000000033|nas] [debug] Security Mode Command received
+[2024-12-20 15:18:36.493] [208950000000033|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:18:36.493] [208950000000033|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:18:36.496] [208950000000035|nas] [debug] Security Mode Command received
+[2024-12-20 15:18:36.496] [208950000000035|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:18:36.496] [208950000000035|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:18:36.499] [208950000000037|nas] [debug] Security Mode Command received
+[2024-12-20 15:18:36.499] [208950000000037|nas] [error] [IA0, EA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:18:36.499] [208950000000037|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:18:36.502] [208950000000032|nas] [debug] Security Mode Command received
+[2024-12-20 15:18:36.502] [208950000000032|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:18:36.502] [208950000000032|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:18:36.506] [208950000000040|nas] [debug] Security Mode Command received
+[2024-12-20 15:18:36.506] [208950000000040|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:18:36.506] [208950000000040|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:18:36.509] [208950000000034|nas] [debug] Security Mode Command received
+[2024-12-20 15:18:36.509] [208950000000034|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:18:36.509] [208950000000034|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:18:36.512] [208950000000036|nas] [debug] Security Mode Command received
+[2024-12-20 15:18:36.512] [208950000000036|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:18:36.512] [208950000000036|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:18:51.374] [208950000000039|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:18:51.374] [208950000000039|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:51.374] [208950000000039|nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2024-12-20 15:18:51.374] [208950000000038|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:18:51.374] [208950000000038|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:51.374] [208950000000039|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:18:51.374] [208950000000039|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:18:51.374] [208950000000039|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:18:51.374] [208950000000038|nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2024-12-20 15:18:51.374] [208950000000038|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:18:51.374] [208950000000038|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:18:51.374] [208950000000039|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:18:51.374] [208950000000038|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:18:51.374] [208950000000038|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:18:51.375] [208950000000031|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:18:51.375] [208950000000031|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:51.375] [208950000000040|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:18:51.375] [208950000000040|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:51.375] [208950000000031|nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2024-12-20 15:18:51.375] [208950000000031|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:18:51.375] [208950000000040|nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2024-12-20 15:18:51.375] [208950000000040|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:18:51.375] [208950000000031|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:18:51.375] [208950000000040|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:18:51.375] [208950000000040|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:18:51.375] [208950000000033|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:18:51.375] [208950000000033|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:51.375] [208950000000033|nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2024-12-20 15:18:51.375] [208950000000033|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:18:51.375] [208950000000035|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:18:51.375] [208950000000035|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:51.375] [208950000000031|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:18:51.375] [208950000000040|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:18:51.375] [208950000000033|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:18:51.375] [208950000000033|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:18:51.375] [208950000000035|nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2024-12-20 15:18:51.375] [208950000000035|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:18:51.375] [208950000000033|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:18:51.375] [208950000000035|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:18:51.375] [208950000000031|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:18:51.375] [208950000000035|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:18:51.375] [208950000000035|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:18:51.376] [208950000000034|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:18:51.376] [208950000000034|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:51.376] [208950000000034|nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2024-12-20 15:18:51.376] [208950000000034|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:18:51.376] [208950000000032|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:18:51.376] [208950000000034|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:18:51.376] [208950000000032|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:51.376] [208950000000036|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:18:51.376] [208950000000036|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:51.376] [208950000000036|nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2024-12-20 15:18:51.376] [208950000000036|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:18:51.376] [208950000000032|nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2024-12-20 15:18:51.376] [208950000000032|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:18:51.376] [208950000000036|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:18:51.376] [208950000000037|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:18:51.376] [208950000000037|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:18:51.376] [208950000000036|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:18:51.376] [208950000000032|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:18:51.376] [208950000000032|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:18:51.376] [208950000000037|nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2024-12-20 15:18:51.376] [208950000000037|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:18:51.376] [208950000000034|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:18:51.376] [208950000000037|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:18:51.376] [208950000000034|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:18:51.376] [208950000000037|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:18:51.376] [208950000000036|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:18:51.376] [208950000000037|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:18:51.376] [208950000000032|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:18:51.572] [rrc] [debug] UE[11] new signal detected
+[2024-12-20 15:18:51.572] [rrc] [debug] UE[12] new signal detected
+[2024-12-20 15:18:51.572] [rrc] [debug] UE[13] new signal detected
+[2024-12-20 15:18:51.573] [rrc] [debug] UE[14] new signal detected
+[2024-12-20 15:18:51.573] [rrc] [debug] UE[15] new signal detected
+[2024-12-20 15:18:51.573] [rrc] [debug] UE[16] new signal detected
+[2024-12-20 15:18:51.573] [rrc] [debug] UE[17] new signal detected
+[2024-12-20 15:18:51.573] [rrc] [debug] UE[18] new signal detected
+[2024-12-20 15:18:51.573] [rrc] [debug] UE[19] new signal detected
+[2024-12-20 15:18:51.574] [rrc] [debug] UE[20] new signal detected
+[2024-12-20 15:18:52.574] [rls] [debug] UE[1] signal lost
+[2024-12-20 15:18:52.574] [rls] [debug] UE[2] signal lost
+[2024-12-20 15:18:52.574] [rls] [debug] UE[3] signal lost
+[2024-12-20 15:18:52.574] [rls] [debug] UE[4] signal lost
+[2024-12-20 15:18:52.574] [rls] [debug] UE[5] signal lost
+[2024-12-20 15:18:52.574] [rls] [debug] UE[6] signal lost
+[2024-12-20 15:18:52.574] [rls] [debug] UE[7] signal lost
+[2024-12-20 15:18:52.574] [rls] [debug] UE[8] signal lost
+[2024-12-20 15:18:52.574] [rls] [debug] UE[9] signal lost
+[2024-12-20 15:18:52.574] [rls] [debug] UE[10] signal lost
+[2024-12-20 15:19:01.384] [208950000000038|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:01.384] [208950000000038|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:01.384] [208950000000038|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:01.384] [208950000000038|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:01.384] [208950000000039|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:01.384] [208950000000039|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:01.384] [208950000000038|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:01.384] [208950000000038|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:01.384] [208950000000038|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:01.384] [208950000000039|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:01.384] [208950000000039|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:01.384] [208950000000039|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:01.384] [208950000000039|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:01.384] [208950000000039|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:01.384] [rrc] [info] RRC Setup for UE[12]
+[2024-12-20 15:19:01.384] [rrc] [info] RRC Setup for UE[19]
+[2024-12-20 15:19:01.384] [208950000000038|rrc] [info] RRC connection established
+[2024-12-20 15:19:01.384] [208950000000038|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:01.384] [208950000000038|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:01.384] [208950000000039|rrc] [info] RRC connection established
+[2024-12-20 15:19:01.384] [208950000000039|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:01.384] [208950000000039|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:01.384] [ngap] [debug] Initial NAS message received from UE[12]
+[2024-12-20 15:19:01.384] [ngap] [debug] Initial NAS message received from UE[19]
+[2024-12-20 15:19:01.385] [208950000000033|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:01.385] [208950000000033|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:01.385] [208950000000031|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:01.385] [208950000000031|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:01.385] [208950000000033|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:01.385] [208950000000040|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:01.385] [208950000000035|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:01.385] [208950000000031|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:01.385] [208950000000031|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:01.385] [208950000000040|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:01.385] [208950000000035|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:01.385] [208950000000033|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:01.385] [208950000000040|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:01.385] [208950000000040|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:01.385] [208950000000031|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:01.385] [208950000000033|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:01.385] [208950000000031|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:01.385] [208950000000033|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:01.385] [208950000000031|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:01.385] [208950000000035|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:01.385] [208950000000040|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:01.385] [208950000000033|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:01.385] [208950000000040|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:01.385] [208950000000040|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:01.385] [208950000000035|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:01.385] [208950000000035|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:01.385] [208950000000035|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:01.385] [208950000000035|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:01.385] [rrc] [info] RRC Setup for UE[11]
+[2024-12-20 15:19:01.385] [rrc] [info] RRC Setup for UE[17]
+[2024-12-20 15:19:01.385] [rrc] [info] RRC Setup for UE[14]
+[2024-12-20 15:19:01.385] [rrc] [info] RRC Setup for UE[18]
+[2024-12-20 15:19:01.385] [208950000000031|rrc] [info] RRC connection established
+[2024-12-20 15:19:01.385] [208950000000031|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:01.385] [208950000000031|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:01.385] [208950000000040|rrc] [info] RRC connection established
+[2024-12-20 15:19:01.385] [208950000000040|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:01.385] [208950000000040|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:01.385] [208950000000035|rrc] [info] RRC connection established
+[2024-12-20 15:19:01.385] [208950000000035|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:01.385] [208950000000035|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:01.385] [ngap] [debug] Initial NAS message received from UE[11]
+[2024-12-20 15:19:01.385] [208950000000033|rrc] [info] RRC connection established
+[2024-12-20 15:19:01.385] [208950000000033|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:01.385] [208950000000033|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:01.385] [ngap] [debug] Initial NAS message received from UE[17]
+[2024-12-20 15:19:01.385] [ngap] [debug] Initial NAS message received from UE[18]
+[2024-12-20 15:19:01.385] [ngap] [debug] Initial NAS message received from UE[14]
+[2024-12-20 15:19:01.386] [208950000000037|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:01.386] [208950000000037|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:01.386] [208950000000034|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:01.386] [208950000000034|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:01.386] [208950000000032|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:01.386] [208950000000032|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:01.386] [208950000000034|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:01.386] [208950000000037|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:01.386] [208950000000037|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:01.386] [208950000000036|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:01.386] [208950000000032|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:01.386] [208950000000036|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:01.386] [208950000000034|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:01.386] [208950000000032|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:01.386] [208950000000037|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:01.386] [208950000000037|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:01.386] [208950000000037|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:01.386] [208950000000036|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:01.386] [208950000000036|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:01.386] [208950000000032|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:01.386] [208950000000032|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:01.386] [208950000000034|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:01.386] [208950000000034|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:01.386] [208950000000032|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:01.386] [208950000000034|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:01.386] [208950000000036|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:01.386] [208950000000036|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:01.386] [208950000000036|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:01.386] [rrc] [info] RRC Setup for UE[13]
+[2024-12-20 15:19:01.386] [rrc] [info] RRC Setup for UE[15]
+[2024-12-20 15:19:01.386] [rrc] [info] RRC Setup for UE[20]
+[2024-12-20 15:19:01.386] [rrc] [info] RRC Setup for UE[16]
+[2024-12-20 15:19:01.386] [208950000000037|rrc] [info] RRC connection established
+[2024-12-20 15:19:01.386] [208950000000032|rrc] [info] RRC connection established
+[2024-12-20 15:19:01.386] [208950000000032|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:01.386] [208950000000034|rrc] [info] RRC connection established
+[2024-12-20 15:19:01.386] [208950000000036|rrc] [info] RRC connection established
+[2024-12-20 15:19:01.386] [208950000000036|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:01.386] [208950000000036|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:01.386] [208950000000032|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:01.386] [208950000000037|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:01.386] [208950000000034|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:01.386] [ngap] [debug] Initial NAS message received from UE[13]
+[2024-12-20 15:19:01.386] [208950000000037|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:01.386] [208950000000034|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:01.386] [ngap] [debug] Initial NAS message received from UE[16]
+[2024-12-20 15:19:01.386] [ngap] [debug] Initial NAS message received from UE[15]
+[2024-12-20 15:19:01.386] [ngap] [debug] Initial NAS message received from UE[20]
+[2024-12-20 15:19:01.402] [208950000000038|nas] [debug] Authentication Request received
+[2024-12-20 15:19:01.411] [208950000000039|nas] [debug] Authentication Request received
+[2024-12-20 15:19:01.418] [208950000000031|nas] [debug] Authentication Request received
+[2024-12-20 15:19:01.427] [208950000000040|nas] [debug] Authentication Request received
+[2024-12-20 15:19:01.440] [208950000000035|nas] [debug] Authentication Request received
+[2024-12-20 15:19:01.451] [208950000000033|nas] [debug] Authentication Request received
+[2024-12-20 15:19:01.460] [208950000000037|nas] [debug] Authentication Request received
+[2024-12-20 15:19:01.470] [208950000000036|nas] [debug] Authentication Request received
+[2024-12-20 15:19:01.480] [208950000000032|nas] [debug] Authentication Request received
+[2024-12-20 15:19:01.490] [208950000000034|nas] [debug] Authentication Request received
+[2024-12-20 15:19:01.500] [208950000000038|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:01.500] [208950000000038|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:01.500] [208950000000038|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:01.503] [208950000000039|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:01.503] [208950000000039|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:01.503] [208950000000039|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:01.506] [208950000000031|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:01.506] [208950000000031|nas] [error] [IA0, EA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:01.506] [208950000000031|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:01.509] [208950000000040|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:01.509] [208950000000040|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:01.509] [208950000000040|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:01.513] [208950000000035|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:01.513] [208950000000035|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:01.513] [208950000000035|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:01.516] [208950000000033|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:01.516] [208950000000033|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:01.516] [208950000000033|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:01.519] [208950000000037|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:01.519] [208950000000037|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:01.519] [208950000000037|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:01.523] [208950000000036|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:01.523] [208950000000036|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:01.523] [208950000000036|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:01.526] [208950000000032|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:01.526] [208950000000032|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:01.526] [208950000000032|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:01.529] [208950000000034|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:01.529] [208950000000034|nas] [error] [IA0, EA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:01.529] [208950000000034|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:16.399] [208950000000038|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:19:16.399] [208950000000038|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:19:16.399] [208950000000038|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:19:16.399] [208950000000038|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:19:16.399] [208950000000039|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:19:16.399] [208950000000039|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:19:16.399] [208950000000039|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:19:16.399] [208950000000038|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:19:16.399] [208950000000039|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:19:16.399] [208950000000039|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:19:16.399] [208950000000038|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:19:16.399] [208950000000039|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:19:16.400] [208950000000033|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:19:16.400] [208950000000033|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:19:16.400] [208950000000033|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:19:16.400] [208950000000033|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:19:16.400] [208950000000033|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:19:16.400] [208950000000033|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:19:16.400] [208950000000031|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:19:16.400] [208950000000031|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:19:16.400] [208950000000035|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:19:16.400] [208950000000035|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:19:16.400] [208950000000040|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:19:16.400] [208950000000040|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:19:16.400] [208950000000040|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:19:16.400] [208950000000031|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:19:16.400] [208950000000040|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:19:16.400] [208950000000040|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:19:16.400] [208950000000031|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:19:16.400] [208950000000035|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:19:16.400] [208950000000031|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:19:16.400] [208950000000040|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:19:16.400] [208950000000035|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:19:16.400] [208950000000035|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:19:16.400] [208950000000031|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:19:16.400] [208950000000035|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:19:16.401] [208950000000037|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:19:16.401] [208950000000037|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:19:16.401] [208950000000037|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:19:16.401] [208950000000037|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:19:16.401] [208950000000036|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:19:16.401] [208950000000036|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:19:16.401] [208950000000032|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:19:16.401] [208950000000037|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:19:16.401] [208950000000032|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:19:16.401] [208950000000032|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:19:16.401] [208950000000036|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:19:16.401] [208950000000032|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:19:16.401] [208950000000036|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:19:16.401] [208950000000037|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:19:16.401] [208950000000036|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:19:16.401] [208950000000032|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:19:16.401] [208950000000036|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:19:16.401] [208950000000032|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:19:16.401] [208950000000034|nas] [debug] NAS timer[3510] expired [1]
+[2024-12-20 15:19:16.401] [208950000000034|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-20 15:19:16.401] [208950000000034|nas] [info] Performing local release of NAS connection
+[2024-12-20 15:19:16.401] [208950000000034|nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2024-12-20 15:19:16.401] [208950000000034|rrc] [info] UE switches to state [RRC-IDLE]
+[2024-12-20 15:19:16.401] [208950000000034|nas] [info] UE switches to state [CM-IDLE]
+[2024-12-20 15:19:17.171] [rrc] [debug] UE[21] new signal detected
+[2024-12-20 15:19:17.171] [rrc] [debug] UE[22] new signal detected
+[2024-12-20 15:19:17.171] [rrc] [debug] UE[23] new signal detected
+[2024-12-20 15:19:17.171] [rrc] [debug] UE[24] new signal detected
+[2024-12-20 15:19:17.171] [rrc] [debug] UE[25] new signal detected
+[2024-12-20 15:19:17.171] [rrc] [debug] UE[26] new signal detected
+[2024-12-20 15:19:17.171] [rrc] [debug] UE[27] new signal detected
+[2024-12-20 15:19:17.171] [rrc] [debug] UE[28] new signal detected
+[2024-12-20 15:19:17.373] [rrc] [debug] UE[29] new signal detected
+[2024-12-20 15:19:17.373] [rrc] [debug] UE[30] new signal detected
+[2024-12-20 15:19:18.174] [rls] [debug] UE[11] signal lost
+[2024-12-20 15:19:18.174] [rls] [debug] UE[13] signal lost
+[2024-12-20 15:19:18.174] [rls] [debug] UE[15] signal lost
+[2024-12-20 15:19:18.174] [rls] [debug] UE[16] signal lost
+[2024-12-20 15:19:18.174] [rls] [debug] UE[17] signal lost
+[2024-12-20 15:19:18.174] [rls] [debug] UE[18] signal lost
+[2024-12-20 15:19:18.174] [rls] [debug] UE[19] signal lost
+[2024-12-20 15:19:18.174] [rls] [debug] UE[20] signal lost
+[2024-12-20 15:19:19.176] [rls] [debug] UE[12] signal lost
+[2024-12-20 15:19:19.176] [rls] [debug] UE[14] signal lost
+[2024-12-20 15:19:26.409] [208950000000038|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:26.409] [208950000000038|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:26.409] [208950000000039|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:26.409] [208950000000039|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:26.409] [208950000000038|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:26.409] [208950000000038|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:26.409] [208950000000039|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:26.409] [208950000000039|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:26.409] [208950000000038|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:26.409] [208950000000038|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:26.409] [208950000000039|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:26.409] [208950000000038|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:26.409] [208950000000039|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:26.409] [208950000000039|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:26.409] [rrc] [info] RRC Setup for UE[30]
+[2024-12-20 15:19:26.409] [rrc] [info] RRC Setup for UE[25]
+[2024-12-20 15:19:26.409] [208950000000038|rrc] [info] RRC connection established
+[2024-12-20 15:19:26.409] [208950000000038|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:26.409] [208950000000039|rrc] [info] RRC connection established
+[2024-12-20 15:19:26.409] [208950000000039|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:26.409] [208950000000038|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:26.409] [208950000000039|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:26.409] [ngap] [debug] Initial NAS message received from UE[30]
+[2024-12-20 15:19:26.409] [ngap] [debug] Initial NAS message received from UE[25]
+[2024-12-20 15:19:26.410] [208950000000031|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:26.410] [208950000000031|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:26.410] [208950000000035|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:26.410] [208950000000035|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:26.410] [208950000000031|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:26.410] [208950000000035|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:26.410] [208950000000031|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:26.410] [208950000000040|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:26.410] [208950000000040|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:26.410] [208950000000033|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:26.410] [208950000000035|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:26.410] [208950000000033|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:26.410] [208950000000031|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:26.410] [208950000000031|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:26.410] [208950000000040|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:26.410] [208950000000040|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:26.410] [208950000000031|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:26.410] [208950000000035|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:26.410] [208950000000035|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:26.410] [208950000000033|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:26.410] [208950000000033|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:26.410] [208950000000035|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:26.410] [208950000000040|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:26.410] [208950000000040|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:26.410] [208950000000040|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:26.410] [208950000000033|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:26.410] [208950000000033|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:26.410] [208950000000033|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:26.410] [rrc] [info] RRC Setup for UE[23]
+[2024-12-20 15:19:26.410] [rrc] [info] RRC Setup for UE[26]
+[2024-12-20 15:19:26.410] [rrc] [info] RRC Setup for UE[29]
+[2024-12-20 15:19:26.410] [rrc] [info] RRC Setup for UE[21]
+[2024-12-20 15:19:26.410] [208950000000031|rrc] [info] RRC connection established
+[2024-12-20 15:19:26.410] [208950000000031|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:26.410] [208950000000035|rrc] [info] RRC connection established
+[2024-12-20 15:19:26.410] [208950000000035|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:26.410] [208950000000031|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:26.410] [208950000000035|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:26.410] [208950000000040|rrc] [info] RRC connection established
+[2024-12-20 15:19:26.410] [208950000000040|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:26.410] [208950000000033|rrc] [info] RRC connection established
+[2024-12-20 15:19:26.410] [208950000000033|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:26.410] [208950000000040|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:26.410] [208950000000033|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:26.410] [ngap] [debug] Initial NAS message received from UE[23]
+[2024-12-20 15:19:26.410] [ngap] [debug] Initial NAS message received from UE[26]
+[2024-12-20 15:19:26.410] [ngap] [debug] Initial NAS message received from UE[21]
+[2024-12-20 15:19:26.410] [ngap] [debug] Initial NAS message received from UE[29]
+[2024-12-20 15:19:26.411] [208950000000036|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:26.411] [208950000000036|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:26.411] [208950000000034|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:26.411] [208950000000034|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:26.411] [208950000000034|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:26.411] [208950000000037|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:26.411] [208950000000037|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:26.411] [208950000000034|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:26.411] [208950000000032|nas] [debug] NAS timer[3511] expired [1]
+[2024-12-20 15:19:26.411] [208950000000032|nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2024-12-20 15:19:26.411] [208950000000036|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:26.411] [208950000000036|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:26.411] [208950000000034|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:26.411] [208950000000034|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:26.411] [208950000000037|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:26.411] [208950000000037|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:26.411] [208950000000034|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:26.411] [208950000000032|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-20 15:19:26.411] [208950000000032|nas] [debug] Sending Initial Registration
+[2024-12-20 15:19:26.411] [208950000000036|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:26.411] [208950000000036|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:26.411] [208950000000037|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:26.411] [208950000000037|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:26.411] [208950000000037|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:26.411] [208950000000032|nas] [debug] Deleting NAS security context
+[2024-12-20 15:19:26.411] [208950000000032|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-20 15:19:26.411] [208950000000032|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:26.411] [208950000000036|rrc] [debug] Sending RRC Setup Request
+[2024-12-20 15:19:26.411] [rrc] [info] RRC Setup for UE[28]
+[2024-12-20 15:19:26.411] [rrc] [info] RRC Setup for UE[24]
+[2024-12-20 15:19:26.411] [rrc] [info] RRC Setup for UE[22]
+[2024-12-20 15:19:26.411] [208950000000037|rrc] [info] RRC connection established
+[2024-12-20 15:19:26.411] [rrc] [info] RRC Setup for UE[27]
+[2024-12-20 15:19:26.411] [208950000000037|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:26.411] [208950000000034|rrc] [info] RRC connection established
+[2024-12-20 15:19:26.411] [208950000000034|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:26.411] [208950000000037|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:26.411] [208950000000034|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:26.411] [ngap] [debug] Initial NAS message received from UE[24]
+[2024-12-20 15:19:26.411] [208950000000036|rrc] [info] RRC connection established
+[2024-12-20 15:19:26.411] [208950000000032|rrc] [info] RRC connection established
+[2024-12-20 15:19:26.411] [ngap] [debug] Initial NAS message received from UE[28]
+[2024-12-20 15:19:26.411] [208950000000032|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:26.411] [208950000000036|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-20 15:19:26.411] [208950000000032|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:26.411] [208950000000036|nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-20 15:19:26.411] [ngap] [debug] Initial NAS message received from UE[27]
+[2024-12-20 15:19:26.411] [ngap] [debug] Initial NAS message received from UE[22]
+[2024-12-20 15:19:26.427] [208950000000038|nas] [debug] Authentication Request received
+[2024-12-20 15:19:26.439] [208950000000039|nas] [debug] Authentication Request received
+[2024-12-20 15:19:26.449] [208950000000031|nas] [debug] Authentication Request received
+[2024-12-20 15:19:26.459] [208950000000035|nas] [debug] Authentication Request received
+[2024-12-20 15:19:26.467] [208950000000040|nas] [debug] Authentication Request received
+[2024-12-20 15:19:26.476] [208950000000033|nas] [debug] Authentication Request received
+[2024-12-20 15:19:26.487] [208950000000037|nas] [debug] Authentication Request received
+[2024-12-20 15:19:26.497] [208950000000034|nas] [debug] Authentication Request received
+[2024-12-20 15:19:26.506] [208950000000036|nas] [debug] Authentication Request received
+[2024-12-20 15:19:26.514] [208950000000032|nas] [debug] Authentication Request received
+[2024-12-20 15:19:26.522] [208950000000038|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:26.522] [208950000000038|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:26.522] [208950000000038|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:26.525] [208950000000039|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:26.525] [208950000000039|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:26.525] [208950000000039|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:26.528] [208950000000031|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:26.528] [208950000000031|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:26.528] [208950000000031|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:26.532] [208950000000035|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:26.532] [208950000000035|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:26.532] [208950000000035|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:26.535] [208950000000040|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:26.535] [208950000000040|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:26.535] [208950000000040|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:26.538] [208950000000033|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:26.538] [208950000000033|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:26.538] [208950000000033|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:26.541] [208950000000037|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:26.541] [208950000000037|nas] [error] [IA0, EA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:26.541] [208950000000037|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:26.544] [208950000000034|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:26.544] [208950000000034|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:26.544] [208950000000034|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:26.548] [208950000000036|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:26.548] [208950000000036|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:26.548] [208950000000036|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]
+[2024-12-20 15:19:26.551] [208950000000032|nas] [debug] Security Mode Command received
+[2024-12-20 15:19:26.551] [208950000000032|nas] [error] [IA0] cannot be accepted as the UE does not have an emergency
+[2024-12-20 15:19:26.551] [208950000000032|nas] [error] Rejecting Security Mode Command with cause [SEC_MODE_REJECTED_UNSPECIFIED]

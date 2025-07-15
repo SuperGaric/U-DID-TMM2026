@@ -1,0 +1,39 @@
+#include "DID.h"
+#include "TLVEncoder.h"
+
+int encode_did(DID did, uint8_t iei, uint8_t* buffer, uint32_t len) {
+    uint32_t encoded = 0;
+    uint8_t bitStream = 0x00;
+
+    CHECK_PDU_POINTER_AND_LENGTH_ENCODER(buffer, DID_MINIMUM_LENGTH, len);
+
+    if (iei > 0){
+        bitStream |= (iei & 0xf0);
+    }
+
+    std::string did_encoded = did.did_value;
+
+    for (size_t i=0; i < did_encoded.size(); ++i) {
+        ENCODE_U8(buffer + encoded, did_encoded[i], encoded);
+    }
+    return encoded ;
+}
+
+int decode_did(DID* did, uint8_t iei, uint8_t* buffer, uint32_t len) {
+    int decoded = 0;
+    uint8_t bitStream = 0x00;
+    DECODE_U8(buffer + decoded, bitStream, decoded);
+
+    // if (iei != (bitStream & 0xf0)) {
+    //     return -1;
+    // }
+
+    size_t did_length = len - decoded;
+    if (did_length <= 0) {
+        return -1;
+    }
+
+    did->did_value = std::string(reinterpret_cast<char*>(buffer + decoded), did_length);
+
+    return decoded + did_length;
+}

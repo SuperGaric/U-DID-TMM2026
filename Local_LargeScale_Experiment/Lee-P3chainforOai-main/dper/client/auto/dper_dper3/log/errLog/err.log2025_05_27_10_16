@@ -1,0 +1,2 @@
+[2025-05-27 10:16:49] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn inbound conn 431b0964253a240d [::1]:45040 failed checkpoint posthandshake: Connected to self
+[2025-05-27 10:16:49] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn dyn dial conn 431b0964253a240d [::1]:20133 failed checkpoint posthandshake: Connected to self

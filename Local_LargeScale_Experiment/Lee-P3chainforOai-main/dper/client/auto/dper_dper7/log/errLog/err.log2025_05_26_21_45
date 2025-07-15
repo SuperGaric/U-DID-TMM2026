@@ -1,0 +1,16 @@
+[2025-05-26 21:45:00] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 21:45:05] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 21:45:10] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 21:45:15] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 21:45:19] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn inbound conn 2451907328ee3c45 [::1]:46382 failed checkpoint posthandshake: Connected to self
+[2025-05-26 21:45:19] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn static dial conn 2451907328ee3c45 [::1]:20137 failed checkpoint posthandshake: Connected to self
+[2025-05-26 21:45:20] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 21:45:25] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 21:45:30] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 21:45:35] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 21:45:40] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 21:45:45] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 21:45:50] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 21:45:50] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn inbound conn 2451907328ee3c45 [::1]:35430 failed checkpoint posthandshake: Connected to self
+[2025-05-26 21:45:50] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn dyn dial conn 2451907328ee3c45 [::1]:20137 failed checkpoint posthandshake: Connected to self
+[2025-05-26 21:45:55] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions

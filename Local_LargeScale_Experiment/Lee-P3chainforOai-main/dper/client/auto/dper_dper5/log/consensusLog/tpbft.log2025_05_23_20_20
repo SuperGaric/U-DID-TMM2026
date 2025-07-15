@@ -1,0 +1,26 @@
+[2025-05-23 20:20:00] [info] consensusPromoter.go:257 p3Chain/core/consensus.(*ConsensusPromoter).lowerUpdate [TPBFT Consensus] Lower Consensus: Current Consensus Node (e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7) has receive transaction (count:1) from other consensus node (e1d5272a1cfc5b45b7f0bb59ec7ea1d5b18310d3) 
+
+[2025-05-23 20:20:04] [info] consensusPromoter.go:280 p3Chain/core/consensus.(*ConsensusPromoter).lowerUpdate [TPBFT Consensus] Lower Consensus: Current Consensus Node (e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7) has receive pre-prepare Message from Leader (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) within group (net0)
+
+[2025-05-23 20:20:04] [info] consensusPromoter.go:283 p3Chain/core/consensus.(*ConsensusPromoter).lowerUpdate [TPBFT Consensus] Lower Consensus: Leader doesn't have corresponding roundHandler, Waiting for creation....
+
+[2025-05-23 20:20:04] [info] consensusPromoter.go:331 p3Chain/core/consensus.(*ConsensusPromoter).lowerUpdate [TPBFT Consensus] Lower Consensus: The new roundHandler (roundID:c82f323a712d3716bab9e3a8a7bc51dd8bceea4f11a14b1701774c46021240b0) has been created and being running
+
+[2025-05-23 20:20:04] [info] roundHandler.go:287 p3Chain/core/consensus.(*roundHandler).SendPrepareMsg [TPBFT Consensus] Lower Channel: Current Consensus Node (e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7) has broadcast prepareMsg within roundID (c82f323a712d3716bab9e3a8a7bc51dd8bceea4f11a14b1701774c46021240b0)
+
+[2025-05-23 20:20:04] [info] roundHandler.go:161 p3Chain/core/consensus.(*roundHandler).Start [TPBFT Consensus] Lower Channel: roudHandler with round ID: c82f323a712d3716bab9e3a8a7bc51dd8bceea4f11a14b1701774c46021240b0 starts to running!
+
+[2025-05-23 20:20:05] [info] roundHandler.go:113 p3Chain/core/consensus.(*roundHandler).processMsg [TPBFT Consensus] Lower Consensus: Node (e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7) receive validated PrepareMsg from Node (431b0964253a240d47bceee2bce1fb2556a470df8d50f7e9febd40cf67504e4e4bb47948a55a8037fe6363c49f4219572203eaa7d0ee186f2ff419512701e4d1) and has added it into roundHandler.prepareMsgPool
+
+[2025-05-23 20:20:05] [info] roundHandler.go:113 p3Chain/core/consensus.(*roundHandler).processMsg [TPBFT Consensus] Lower Consensus: Node (e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7) receive validated PrepareMsg from Node (2451907328ee3c45a7c52989d4b89219531d88b341cc50a0e7a987f980f3817a002d53adb120bb33ea6f55bf4883482bd32f009798c8465a0997ab8500511062) and has added it into roundHandler.prepareMsgPool
+
+[2025-05-23 20:20:05] [info] roundHandler.go:200 p3Chain/core/consensus.(*roundHandler).Do [TPBFT Consensus] Lower Channel: Node (e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7) has completed the prepare phase consensus, validOrder:[1]
+
+[2025-05-23 20:20:05] [info] tpbt_common.go:277 p3Chain/core/consensus.(*Ctpbft).TidyTransactions [TPBFT Consensus] Ctpbft: Leader (e1d5272a1cfc5b45b7f0bb59ec7ea1d5b18310d3) Tidy candidateBlock successfully, blockID:0a4caa40c968d3adfb4d112819999a7df6c4e841b54469133fa2faf3b78d0850, txSum:1
+
+[2025-05-23 20:20:05] [info] roundHandler.go:238 p3Chain/core/consensus.(*roundHandler).Do [TPBFT Consensus] Lower Channel: Node (e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7) has completed the tidy phase consensus and has sent CommitMsg to the Leader (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82)
+
+[2025-05-23 20:20:05] [info] roundHandler.go:170 p3Chain/core/consensus.(*roundHandler).Stop.func1 [TPBFT Consensus] Lower Channel: roudHandler with round ID: c82f323a712d3716bab9e3a8a7bc51dd8bceea4f11a14b1701774c46021240b0 stop!
+
+[2025-05-23 20:20:08] [info] consensusPromoter.go:217 p3Chain/core/consensus.(*ConsensusPromoter).lowerUpdate [TPBFT Consensus] Lower Consensus: Current Consensus Node (e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7) has receive IntraWSUpdate message from leader, and updates to version 0x0a4caa40c968d3adfb4d112819999a7df6c4e841b54469133fa2faf3b78d0850
+

@@ -1,0 +1,79 @@
+[2025-05-27 10:17:21] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: 38ddba19b61eb9accaa50df278e928c1244138192a87d488f92891b6fa95bd06d3897666770598295d19fa1b8a931c44e2303d2079d89544bfc3e2f630f1a2e3
+
+[2025-05-27 10:17:21] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn inbound conn 6e1d8efaaf478e88 [::1]:37356 failed checkpoint posthandshake: Connected to self
+[2025-05-27 10:17:21] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn dyn dial conn 6e1d8efaaf478e88 [::1]:20136 failed checkpoint posthandshake: Connected to self
+[2025-05-27 10:17:23] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: 38ddba19b61eb9accaa50df278e928c1244138192a87d488f92891b6fa95bd06d3897666770598295d19fa1b8a931c44e2303d2079d89544bfc3e2f630f1a2e3建立静态链接, 节点IP:::1 , 端口号:20132
+
+[2025-05-27 10:17:23] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82
+
+[2025-05-27 10:17:25] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82建立静态链接, 节点IP:::1 , 端口号:20131
+
+[2025-05-27 10:17:25] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: 61a496e340a77b01bc1b31fa5c66f97aeb4dc78efbddcaddc298c118a959080a8f99074a9a0b9280a683bb45d7ff1ca393241245ffeb56a7c1c33d1e5f4999d2
+
+[2025-05-27 10:17:27] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: 61a496e340a77b01bc1b31fa5c66f97aeb4dc78efbddcaddc298c118a959080a8f99074a9a0b9280a683bb45d7ff1ca393241245ffeb56a7c1c33d1e5f4999d2建立静态链接, 节点IP:::1 , 端口号:20134
+
+[2025-05-27 10:17:27] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: 6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf
+
+[2025-05-27 10:17:30] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: 6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf建立静态链接, 节点IP:::1 , 端口号:20136
+
+[2025-05-27 10:17:30] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: ef8ed1ed58aedc842c65e2d1b2a5c04e4d615bc396552542b2ac262a1c5d57fcf2627e8d217c4f00ea3e8204044b9d9331b81545ea5c04a1b6adcfbf45d47307
+
+[2025-05-27 10:17:33] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: ef8ed1ed58aedc842c65e2d1b2a5c04e4d615bc396552542b2ac262a1c5d57fcf2627e8d217c4f00ea3e8204044b9d9331b81545ea5c04a1b6adcfbf45d47307建立静态链接, 节点IP:::1 , 端口号:20138
+
+[2025-05-27 10:17:33] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: ff18a33ef7d83d5a5582a9e3582d638d016ad7eb1b2adc5270d19b6e5f451708f1bf83e44248f0e539226da0c6d5bda8d0abc7c86356bad28139622208b2a92d
+
+[2025-05-27 10:17:35] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: ff18a33ef7d83d5a5582a9e3582d638d016ad7eb1b2adc5270d19b6e5f451708f1bf83e44248f0e539226da0c6d5bda8d0abc7c86356bad28139622208b2a92d建立静态链接, 节点IP:::1 , 端口号:20130
+
+[2025-05-27 10:17:35] [info] peergroup.go:102 p3Chain/core/separator.(*PeerGroup).Start Separator Construct: Peer Group (net1) is started!
+
+[2025-05-27 10:17:35] [info] peergroup.go:102 p3Chain/core/separator.(*PeerGroup).Start Separator Construct: Peer Group (upper) is started!
+
+[2025-05-27 10:17:35] [info] tpbt_common.go:374 p3Chain/core/consensus.(*Ctpbft).Start Ctpbft: Common Kind PBFT starts to running, transaction pool: 6370626674
+
+[2025-05-27 10:17:35] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-27 10:17:35] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf) , NetID (net1)
+
+[2025-05-27 10:17:35] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf) 的静态连接 
+
+[2025-05-27 10:17:35] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: 6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf
+
+[2025-05-27 10:17:38] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: 6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf建立静态链接, 节点IP:::1 , 端口号:20136
+
+[2025-05-27 10:17:40] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-27 10:17:40] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf) , NetID (net1)
+
+[2025-05-27 10:17:40] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf) 的静态连接 
+
+[2025-05-27 10:17:40] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: 6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf
+
+[2025-05-27 10:17:42] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: 6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf建立静态链接, 节点IP:::1 , 端口号:20136
+
+[2025-05-27 10:17:45] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-27 10:17:45] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf) , NetID (net1)
+
+[2025-05-27 10:17:45] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf) 的静态连接 
+
+[2025-05-27 10:17:45] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: 6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf
+
+[2025-05-27 10:17:48] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: 6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf建立静态链接, 节点IP:::1 , 端口号:20136
+
+[2025-05-27 10:17:50] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-27 10:17:50] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf) , NetID (net1)
+
+[2025-05-27 10:17:50] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf) 的静态连接 
+
+[2025-05-27 10:17:50] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: 6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf
+
+[2025-05-27 10:17:52] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn inbound conn 6e1d8efaaf478e88 [::1]:53298 failed checkpoint posthandshake: Connected to self
+[2025-05-27 10:17:52] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn dyn dial conn 6e1d8efaaf478e88 [::1]:20136 failed checkpoint posthandshake: Connected to self
+[2025-05-27 10:17:53] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: 6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf建立静态链接, 节点IP:::1 , 端口号:20136
+
+[2025-05-27 10:17:55] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (1) nodes unable to establish P2P communication due to exceptions
+[2025-05-27 10:17:55] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf) , NetID (net1)
+
+[2025-05-27 10:17:55] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf) 的静态连接 
+
+[2025-05-27 10:17:55] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: 6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf
+
+[2025-05-27 10:17:57] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: 6e1d8efaaf478e8831c420c2407ec6bc69ccf31625248b75675537dbe46745902ae479f1a9257cf9569ae220e27aedb7fd28950d9238dfcdf76cdc45093754bf建立静态链接, 节点IP:::1 , 端口号:20136
+

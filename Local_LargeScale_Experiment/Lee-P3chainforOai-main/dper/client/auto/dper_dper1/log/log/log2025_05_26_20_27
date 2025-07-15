@@ -1,0 +1,232 @@
+[2025-05-26 20:27:01] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82建立静态链接, 节点IP:::1 , 端口号:20131
+
+[2025-05-26 20:27:04] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (2) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 20:27:04] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (net0)
+
+[2025-05-26 20:27:04] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (upper)
+
+[2025-05-26 20:27:04] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) 的静态连接 
+
+[2025-05-26 20:27:04] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82
+
+[2025-05-26 20:27:04] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7, msgcode: 7
+
+[2025-05-26 20:27:04] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 431b0964253a240d47bceee2bce1fb2556a470df8d50f7e9febd40cf67504e4e4bb47948a55a8037fe6363c49f4219572203eaa7d0ee186f2ff419512701e4d1, msgcode: 7
+
+[2025-05-26 20:27:04] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 2451907328ee3c45a7c52989d4b89219531d88b341cc50a0e7a987f980f3817a002d53adb120bb33ea6f55bf4883482bd32f009798c8465a0997ab8500511062, msgcode: 7
+
+[2025-05-26 20:27:04] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 20:27:07] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82建立静态链接, 节点IP:::1 , 端口号:20131
+
+[2025-05-26 20:27:09] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (2) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 20:27:09] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (net0)
+
+[2025-05-26 20:27:09] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (upper)
+
+[2025-05-26 20:27:09] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) 的静态连接 
+
+[2025-05-26 20:27:09] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82
+
+[2025-05-26 20:27:09] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 431b0964253a240d47bceee2bce1fb2556a470df8d50f7e9febd40cf67504e4e4bb47948a55a8037fe6363c49f4219572203eaa7d0ee186f2ff419512701e4d1, msgcode: 7
+
+[2025-05-26 20:27:09] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 2451907328ee3c45a7c52989d4b89219531d88b341cc50a0e7a987f980f3817a002d53adb120bb33ea6f55bf4883482bd32f009798c8465a0997ab8500511062, msgcode: 7
+
+[2025-05-26 20:27:09] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7, msgcode: 7
+
+[2025-05-26 20:27:09] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 20:27:12] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82建立静态链接, 节点IP:::1 , 端口号:20131
+
+[2025-05-26 20:27:12] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn inbound conn b8f494c8bc110aba [::1]:40394 failed checkpoint posthandshake: Connected to self
+[2025-05-26 20:27:12] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn static dial conn b8f494c8bc110aba [::1]:20131 failed checkpoint posthandshake: Connected to self
+[2025-05-26 20:27:14] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (2) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 20:27:14] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (net0)
+
+[2025-05-26 20:27:14] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (upper)
+
+[2025-05-26 20:27:14] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) 的静态连接 
+
+[2025-05-26 20:27:14] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82
+
+[2025-05-26 20:27:14] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 431b0964253a240d47bceee2bce1fb2556a470df8d50f7e9febd40cf67504e4e4bb47948a55a8037fe6363c49f4219572203eaa7d0ee186f2ff419512701e4d1, msgcode: 7
+
+[2025-05-26 20:27:14] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 2451907328ee3c45a7c52989d4b89219531d88b341cc50a0e7a987f980f3817a002d53adb120bb33ea6f55bf4883482bd32f009798c8465a0997ab8500511062, msgcode: 7
+
+[2025-05-26 20:27:14] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7, msgcode: 7
+
+[2025-05-26 20:27:14] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 20:27:17] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82建立静态链接, 节点IP:::1 , 端口号:20131
+
+[2025-05-26 20:27:19] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (2) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 20:27:19] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (upper)
+
+[2025-05-26 20:27:19] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (net0)
+
+[2025-05-26 20:27:19] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) 的静态连接 
+
+[2025-05-26 20:27:19] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82
+
+[2025-05-26 20:27:19] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 2451907328ee3c45a7c52989d4b89219531d88b341cc50a0e7a987f980f3817a002d53adb120bb33ea6f55bf4883482bd32f009798c8465a0997ab8500511062, msgcode: 7
+
+[2025-05-26 20:27:19] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7, msgcode: 7
+
+[2025-05-26 20:27:19] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 431b0964253a240d47bceee2bce1fb2556a470df8d50f7e9febd40cf67504e4e4bb47948a55a8037fe6363c49f4219572203eaa7d0ee186f2ff419512701e4d1, msgcode: 7
+
+[2025-05-26 20:27:19] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 20:27:22] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82建立静态链接, 节点IP:::1 , 端口号:20131
+
+[2025-05-26 20:27:24] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (2) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 20:27:24] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (net0)
+
+[2025-05-26 20:27:24] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (upper)
+
+[2025-05-26 20:27:24] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) 的静态连接 
+
+[2025-05-26 20:27:24] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82
+
+[2025-05-26 20:27:24] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7, msgcode: 7
+
+[2025-05-26 20:27:24] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 431b0964253a240d47bceee2bce1fb2556a470df8d50f7e9febd40cf67504e4e4bb47948a55a8037fe6363c49f4219572203eaa7d0ee186f2ff419512701e4d1, msgcode: 7
+
+[2025-05-26 20:27:24] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 2451907328ee3c45a7c52989d4b89219531d88b341cc50a0e7a987f980f3817a002d53adb120bb33ea6f55bf4883482bd32f009798c8465a0997ab8500511062, msgcode: 7
+
+[2025-05-26 20:27:24] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 20:27:26] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82建立静态链接, 节点IP:::1 , 端口号:20131
+
+[2025-05-26 20:27:29] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (2) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 20:27:29] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (net0)
+
+[2025-05-26 20:27:29] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (upper)
+
+[2025-05-26 20:27:29] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) 的静态连接 
+
+[2025-05-26 20:27:29] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82
+
+[2025-05-26 20:27:29] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 431b0964253a240d47bceee2bce1fb2556a470df8d50f7e9febd40cf67504e4e4bb47948a55a8037fe6363c49f4219572203eaa7d0ee186f2ff419512701e4d1, msgcode: 7
+
+[2025-05-26 20:27:29] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 2451907328ee3c45a7c52989d4b89219531d88b341cc50a0e7a987f980f3817a002d53adb120bb33ea6f55bf4883482bd32f009798c8465a0997ab8500511062, msgcode: 7
+
+[2025-05-26 20:27:29] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7, msgcode: 7
+
+[2025-05-26 20:27:29] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 20:27:32] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82建立静态链接, 节点IP:::1 , 端口号:20131
+
+[2025-05-26 20:27:34] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (2) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 20:27:34] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (net0)
+
+[2025-05-26 20:27:34] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (upper)
+
+[2025-05-26 20:27:34] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) 的静态连接 
+
+[2025-05-26 20:27:34] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82
+
+[2025-05-26 20:27:34] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 2451907328ee3c45a7c52989d4b89219531d88b341cc50a0e7a987f980f3817a002d53adb120bb33ea6f55bf4883482bd32f009798c8465a0997ab8500511062, msgcode: 7
+
+[2025-05-26 20:27:34] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7, msgcode: 7
+
+[2025-05-26 20:27:34] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 431b0964253a240d47bceee2bce1fb2556a470df8d50f7e9febd40cf67504e4e4bb47948a55a8037fe6363c49f4219572203eaa7d0ee186f2ff419512701e4d1, msgcode: 7
+
+[2025-05-26 20:27:34] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 20:27:37] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82建立静态链接, 节点IP:::1 , 端口号:20131
+
+[2025-05-26 20:27:39] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (2) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 20:27:39] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (net0)
+
+[2025-05-26 20:27:39] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (upper)
+
+[2025-05-26 20:27:39] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) 的静态连接 
+
+[2025-05-26 20:27:39] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82
+
+[2025-05-26 20:27:39] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 431b0964253a240d47bceee2bce1fb2556a470df8d50f7e9febd40cf67504e4e4bb47948a55a8037fe6363c49f4219572203eaa7d0ee186f2ff419512701e4d1, msgcode: 7
+
+[2025-05-26 20:27:39] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 2451907328ee3c45a7c52989d4b89219531d88b341cc50a0e7a987f980f3817a002d53adb120bb33ea6f55bf4883482bd32f009798c8465a0997ab8500511062, msgcode: 7
+
+[2025-05-26 20:27:39] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7, msgcode: 7
+
+[2025-05-26 20:27:39] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 20:27:41] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82建立静态链接, 节点IP:::1 , 端口号:20131
+
+[2025-05-26 20:27:44] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (2) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 20:27:44] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (net0)
+
+[2025-05-26 20:27:44] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (upper)
+
+[2025-05-26 20:27:44] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) 的静态连接 
+
+[2025-05-26 20:27:44] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82
+
+[2025-05-26 20:27:44] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn inbound conn b8f494c8bc110aba [::1]:53622 failed checkpoint posthandshake: Connected to self
+[2025-05-26 20:27:44] [warning] server.go:631 p3Chain/p2p/server.(*Server).setupConn dyn dial conn b8f494c8bc110aba [::1]:20131 failed checkpoint posthandshake: Connected to self
+[2025-05-26 20:27:44] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 431b0964253a240d47bceee2bce1fb2556a470df8d50f7e9febd40cf67504e4e4bb47948a55a8037fe6363c49f4219572203eaa7d0ee186f2ff419512701e4d1, msgcode: 7
+
+[2025-05-26 20:27:44] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 2451907328ee3c45a7c52989d4b89219531d88b341cc50a0e7a987f980f3817a002d53adb120bb33ea6f55bf4883482bd32f009798c8465a0997ab8500511062, msgcode: 7
+
+[2025-05-26 20:27:44] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7, msgcode: 7
+
+[2025-05-26 20:27:44] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 20:27:47] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82建立静态链接, 节点IP:::1 , 端口号:20131
+
+[2025-05-26 20:27:49] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (2) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 20:27:49] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (net0)
+
+[2025-05-26 20:27:49] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (upper)
+
+[2025-05-26 20:27:49] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) 的静态连接 
+
+[2025-05-26 20:27:49] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82
+
+[2025-05-26 20:27:49] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 431b0964253a240d47bceee2bce1fb2556a470df8d50f7e9febd40cf67504e4e4bb47948a55a8037fe6363c49f4219572203eaa7d0ee186f2ff419512701e4d1, msgcode: 7
+
+[2025-05-26 20:27:49] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 2451907328ee3c45a7c52989d4b89219531d88b341cc50a0e7a987f980f3817a002d53adb120bb33ea6f55bf4883482bd32f009798c8465a0997ab8500511062, msgcode: 7
+
+[2025-05-26 20:27:49] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7, msgcode: 7
+
+[2025-05-26 20:27:49] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 20:27:52] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82建立静态链接, 节点IP:::1 , 端口号:20131
+
+[2025-05-26 20:27:54] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (2) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 20:27:54] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (net0)
+
+[2025-05-26 20:27:54] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (upper)
+
+[2025-05-26 20:27:54] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) 的静态连接 
+
+[2025-05-26 20:27:54] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82
+
+[2025-05-26 20:27:54] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 431b0964253a240d47bceee2bce1fb2556a470df8d50f7e9febd40cf67504e4e4bb47948a55a8037fe6363c49f4219572203eaa7d0ee186f2ff419512701e4d1, msgcode: 7
+
+[2025-05-26 20:27:54] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 2451907328ee3c45a7c52989d4b89219531d88b341cc50a0e7a987f980f3817a002d53adb120bb33ea6f55bf4883482bd32f009798c8465a0997ab8500511062, msgcode: 7
+
+[2025-05-26 20:27:54] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7, msgcode: 7
+
+[2025-05-26 20:27:54] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 20:27:57] [info] separator.go:376 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 成功与nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82建立静态链接, 节点IP:::1 , 端口号:20131
+
+[2025-05-26 20:27:59] [warning] separator.go:293 p3Chain/core/separator.(*Separator).DoBind Separator Construct: (2) nodes unable to establish P2P communication due to exceptions
+[2025-05-26 20:27:59] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (net0)
+
+[2025-05-26 20:27:59] [info] separator.go:296 p3Chain/core/separator.(*Separator).DoBind 查询到的断连节点: NodeID (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) , NetID (upper)
+
+[2025-05-26 20:27:59] [info] separator.go:404 p3Chain/core/separator.(*Separator).TidyDialBook 删除与节点 (b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82) 的静态连接 
+
+[2025-05-26 20:27:59] [info] separator.go:368 p3Chain/core/separator.(*Separator).MakeDialBook separator层: 位于unAdded集合中的节点nodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82
+
+[2025-05-26 20:27:59] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 431b0964253a240d47bceee2bce1fb2556a470df8d50f7e9febd40cf67504e4e4bb47948a55a8037fe6363c49f4219572203eaa7d0ee186f2ff419512701e4d1, msgcode: 7
+
+[2025-05-26 20:27:59] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: 2451907328ee3c45a7c52989d4b89219531d88b341cc50a0e7a987f980f3817a002d53adb120bb33ea6f55bf4883482bd32f009798c8465a0997ab8500511062, msgcode: 7
+
+[2025-05-26 20:27:59] [info] peer.go:76 p3Chain/core/separator.(*peer).sendMsg Separator: Send msg to peer: e2fbc5dda9f6e3b11fc91f79873e1c1637f682ad6a213490c41e6bdbd8e3c2ee94dca103430282ecd0695c825fdb413d647ada26fd28f15185f08245f8e038a7, msgcode: 7
+
+[2025-05-26 20:27:59] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+

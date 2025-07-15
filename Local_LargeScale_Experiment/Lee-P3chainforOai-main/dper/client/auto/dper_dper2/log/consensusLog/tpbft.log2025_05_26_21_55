@@ -1,0 +1,24 @@
+[2025-05-26 21:55:00] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 21:55:05] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 21:55:10] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 21:55:15] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 21:55:20] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 21:55:25] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 21:55:30] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 21:55:35] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 21:55:40] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 21:55:45] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 21:55:50] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+
+[2025-05-26 21:55:55] [info] consensusPromoter.go:421 p3Chain/core/consensus.(*ConsensusPromoter).updateIntraWorldState [TPBFT Consensus] Consensus Promoter: leader launch an intra-shard world state update to version 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610, old version: 0x54e5e201f58c3a8cc58f7d16a41edf5e76fb6cb8681583b7b51b21f196608610
+

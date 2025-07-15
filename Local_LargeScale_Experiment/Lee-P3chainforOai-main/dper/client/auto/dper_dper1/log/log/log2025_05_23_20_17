@@ -1,0 +1,39 @@
+[2025-05-23 20:17:58] [info] p3Chain.go:18 main.main [Dper] Dper Client running in PID: 13676  PPID: 13673 
+
+[2025-05-23 20:17:58] [info] dperCommand.go:45 p3Chain/dper/client/commandLine.(*CommandLine).runDperCommand Dper Init: Loading config...,configFile Path:./settings/dperConfig.json
+
+[2025-05-23 20:17:58] [info] backend.go:207 p3Chain/dper.NewDper NewDper: Initialize key manager...
+[2025-05-23 20:17:58] [info] backend.go:237 p3Chain/dper.NewDper NewDper: Welcome to Dper for the first time, the first account has been automatically generated for you!
+
+[2025-05-23 20:17:58] [info] backend.go:246 p3Chain/dper.NewDper NewDper: Complete loading key manager!
+
+[2025-05-23 20:17:58] [info] backend.go:253 p3Chain/dper.NewDper NewDper failed: Complete creating dpnet.Node for self: NodeID: b8f494c8bc110aba95a7604c6972d0447ab06d277da9e16b88a10f61bb372ffb15796b0408cc36a5752611075eea96a88619d72870fd1ffc74080ec11c21cb82 ,NetID: net0 , Role: 2
+
+[2025-05-23 20:17:58] [info] backend.go:255 p3Chain/dper.NewDper NewDper: Initialize database...
+[2025-05-23 20:17:58] [info] backend.go:297 p3Chain/dper.NewDper NewDper: Complete loading database!
+
+[2025-05-23 20:17:58] [info] backend.go:299 p3Chain/dper.NewDper NewDper: Initialize blockchain...
+
+[2025-05-23 20:17:58] [info] blockChain.go:94 p3Chain/core/eles.InitBlockChain BlockChain: Hello,First use of p3Chain!
+
+[2025-05-23 20:17:58] [info] backend.go:309 p3Chain/dper.NewDper NewDper: Complete initializing blockchain!
+
+[2025-05-23 20:17:58] [info] backend.go:311 p3Chain/dper.NewDper NewDper: Initialize state manager...
+
+[2025-05-23 20:17:58] [info] backend.go:313 p3Chain/dper.NewDper NewDper: Complete initializing state manager
+
+[2025-05-23 20:17:58] [info] backend.go:315 p3Chain/dper.NewDper NewDper: Initialize the lagging state manager...
+
+[2025-05-23 20:17:58] [info] state_manager_intra.go:152 p3Chain/core/worldstate.(*IntraStateManager).SetWorldStateVersion set intra world state version to 0x0000000000000000000000000000000000000000000000000000000000000000
+[2025-05-23 20:17:58] [info] backend.go:321 p3Chain/dper.NewDper NewDper: Complete initializing the lagging state manager
+
+[2025-05-23 20:17:58] [info] backend.go:323 p3Chain/dper.NewDper NewDper: Launch contract engine...
+
+[2025-05-23 20:17:58] [info] backend.go:366 p3Chain/dper.NewDper NewDper: Contract engine launched
+
+[2025-05-23 20:17:58] [info] backend.go:368 p3Chain/dper.NewDper NewDper: Now start net manager...
+
+[2025-05-23 20:17:58] [info] backend.go:468 p3Chain/dper.DperNetWorkInit [Dper Init] Network Init, Dper(127.0.0.1:51490) has connect with Booter(127.0.0.1:30300)
+
+[2025-05-23 20:17:58] [info] backend.go:479 p3Chain/dper.DperNetWorkInit [Dper Init] Network Init,Dper(127.0.0.1:51490) has send stateSelfMsg({net0 2 [184 244 148 200 188 17 10 186 149 167 96 76 105 114 208 68 122 176 109 39 125 169 225 107 136 161 15 97 187 55 47 251 21 121 107 4 8 204 54 165 117 38 17 7 94 234 150 168 134 25 215 40 112 253 31 252 116 8 14 193 28 33 203 130]}) bytes(263) to Booter(127.0.0.1:30300)
+

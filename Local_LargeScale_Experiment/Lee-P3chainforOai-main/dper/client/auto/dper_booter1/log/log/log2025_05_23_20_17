@@ -1,0 +1,35 @@
+[2025-05-23 20:17:48] [info] p3Chain.go:18 main.main [Dper] Dper Client running in PID: 13587  PPID: 12887 
+
+[2025-05-23 20:17:49] [info] server.go:322 p3Chain/p2p/server.(*Server).Start P2P: Prepare for Starting Server...
+
+[2025-05-23 20:17:50] [info] whisper.go:177 p3Chain/p2p/whisper.(*Whisper).Start P2P: Whisper started
+
+[2025-05-23 20:17:50] [info] server.go:567 p3Chain/p2p/server.(*Server).listenLoop Listening on:[::]:20130
+[2025-05-23 20:17:58] [info] p3Chain.go:18 main.main [Dper] Dper Client running in PID: 13652  PPID: 13651 
+
+[2025-05-23 20:17:58] [info] orderServiceServer.go:169 p3Chain/dper.BooterNetWorkInit [Dper Init] Network Init, Booter listen on 0.0.0.0:30300
+
+[2025-05-23 20:17:58] [info] orderServiceServer.go:185 p3Chain/dper.BooterNetWorkInit [Dper Init] Network Init, Booter(127.0.0.1:30300) has connect with Dper(127.0.0.1:51490)
+
+[2025-05-23 20:17:58] [info] orderServiceServer.go:232 p3Chain/dper.handleConnection [Dper Init] Network Init, Booter(127.0.0.1:30300) has receive StateSelf Msg({net0 2 [184 244 148 200 188 17 10 186 149 167 96 76 105 114 208 68 122 176 109 39 125 169 225 107 136 161 15 97 187 55 47 251 21 121 107 4 8 204 54 165 117 38 17 7 94 234 150 168 134 25 215 40 112 253 31 252 116 8 14 193 28 33 203 130]}) from Dper(127.0.0.1:51490)
+
+[2025-05-23 20:17:59] [info] orderServiceServer.go:185 p3Chain/dper.BooterNetWorkInit [Dper Init] Network Init, Booter(127.0.0.1:30300) has connect with Dper(127.0.0.1:51492)
+
+[2025-05-23 20:17:59] [info] orderServiceServer.go:232 p3Chain/dper.handleConnection [Dper Init] Network Init, Booter(127.0.0.1:30300) has receive StateSelf Msg({net1 2 [56 221 186 25 182 30 185 172 202 165 13 242 120 233 40 193 36 65 56 25 42 135 212 136 249 40 145 182 250 149 189 6 211 137 118 102 119 5 152 41 93 25 250 27 138 147 28 68 226 48 61 32 121 216 149 68 191 195 226 246 48 241 162 227]}) from Dper(127.0.0.1:51492)
+
+[2025-05-23 20:17:59] [info] orderServiceServer.go:185 p3Chain/dper.BooterNetWorkInit [Dper Init] Network Init, Booter(127.0.0.1:30300) has connect with Dper(127.0.0.1:51502)
+
+[2025-05-23 20:17:59] [info] orderServiceServer.go:232 p3Chain/dper.handleConnection [Dper Init] Network Init, Booter(127.0.0.1:30300) has receive StateSelf Msg({net0 3 [67 27 9 100 37 58 36 13 71 188 238 226 188 225 251 37 86 164 112 223 141 80 247 233 254 189 64 207 103 80 78 78 75 180 121 72 165 90 128 55 254 99 99 196 159 66 25 87 34 3 234 167 208 238 24 111 47 244 25 81 39 1 228 209]}) from Dper(127.0.0.1:51502)
+
+[2025-05-23 20:17:59] [info] orderServiceServer.go:185 p3Chain/dper.BooterNetWorkInit [Dper Init] Network Init, Booter(127.0.0.1:30300) has connect with Dper(127.0.0.1:51518)
+
+[2025-05-23 20:17:59] [info] orderServiceServer.go:232 p3Chain/dper.handleConnection [Dper Init] Network Init, Booter(127.0.0.1:30300) has receive StateSelf Msg({net1 3 [97 164 150 227 64 167 123 1 188 27 49 250 92 102 249 122 235 77 199 142 251 221 202 221 194 152 193 24 169 89 8 10 143 153 7 74 154 11 146 128 166 131 187 69 215 255 28 163 147 36 18 69 255 235 86 167 193 195 61 30 95 73 153 210]}) from Dper(127.0.0.1:51518)
+
+[2025-05-23 20:17:59] [info] orderServiceServer.go:185 p3Chain/dper.BooterNetWorkInit [Dper Init] Network Init, Booter(127.0.0.1:30300) has connect with Dper(127.0.0.1:51520)
+
+[2025-05-23 20:17:59] [info] orderServiceServer.go:232 p3Chain/dper.handleConnection [Dper Init] Network Init, Booter(127.0.0.1:30300) has receive StateSelf Msg({net0 3 [226 251 197 221 169 246 227 177 31 201 31 121 135 62 28 22 55 246 130 173 106 33 52 144 196 30 107 219 216 227 194 238 148 220 161 3 67 2 130 236 208 105 92 130 95 219 65 61 100 122 218 38 253 40 241 81 133 240 130 69 248 224 56 167]}) from Dper(127.0.0.1:51520)
+
+[2025-05-23 20:17:59] [info] orderServiceServer.go:185 p3Chain/dper.BooterNetWorkInit [Dper Init] Network Init, Booter(127.0.0.1:30300) has connect with Dper(127.0.0.1:51522)
+
+[2025-05-23 20:17:59] [info] orderServiceServer.go:232 p3Chain/dper.handleConnection [Dper Init] Network Init, Booter(127.0.0.1:30300) has receive StateSelf Msg({net1 3 [110 29 142 250 175 71 142 136 49 196 32 194 64 126 198 188 105 204 243 22 37 36 139 117 103 85 55 219 228 103 69 144 42 228 121 241 169 37 124 249 86 154 226 32 226 122 237 183 253 40 149 13 146 56 223 205 247 108 220 69 9 55 84 191]}) from Dper(127.0.0.1:51522)
+

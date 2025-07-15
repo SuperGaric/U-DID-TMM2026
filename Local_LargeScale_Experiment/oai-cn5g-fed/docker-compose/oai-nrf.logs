@@ -1,0 +1,1563 @@
+[2024-10-28 08:59:34.943] [nrf_app] [start] Options parsed
+[2024-10-28 08:59:34.943] [config ] [info] Reading NF configuration from /openair-nrf/etc/config.yaml
+[2024-10-28 08:59:34.952] [config ] [debug] Unknown NF amf in configuration. Ignored
+[2024-10-28 08:59:34.952] [config ] [debug] Unknown NF smf in configuration. Ignored
+[2024-10-28 08:59:34.952] [config ] [debug] Unknown NF upf in configuration. Ignored
+[2024-10-28 08:59:34.952] [config ] [debug] Unknown NF udm in configuration. Ignored
+[2024-10-28 08:59:34.952] [config ] [debug] Unknown NF udr in configuration. Ignored
+[2024-10-28 08:59:34.952] [config ] [debug] Unknown NF ausf in configuration. Ignored
+[2024-10-28 08:59:34.953] [config ] [debug] Validating configuration of log_level
+[2024-10-28 08:59:34.953] [config ] [debug] Validating configuration of register_nf
+[2024-10-28 08:59:34.953] [config ] [debug] Validating configuration of http_version
+[2024-10-28 08:59:34.953] [config ] [debug] Validating configuration of curl_timeout
+[2024-10-28 08:59:34.953] [config ] [debug] Validating configuration of NRF Config
+[2024-10-28 08:59:34.954] [config ] [debug] Validating configuration of database
+[2024-10-28 08:59:34.954] [config ] [info] ==== OPENAIRINTERFACE nrf vBranch: HEAD Abrev. Hash: 68dde4e Date: Thu Dec 14 09:28:07 2023 +0000 ====
+[2024-10-28 08:59:34.954] [config ] [info] Basic Configuration:
+[2024-10-28 08:59:34.954] [config ] [info]   - log_level..................................: debug
+[2024-10-28 08:59:34.954] [config ] [info]   - http_version...............................: 2
+[2024-10-28 08:59:34.954] [config ] [info]   - Curl Timeout...............................: 3000 (ms)
+[2024-10-28 08:59:34.954] [config ] [info]   NRF Config:
+[2024-10-28 08:59:34.954] [config ] [info]     - host.....................................: oai-nrf
+[2024-10-28 08:59:34.954] [config ] [info]     - SBI
+[2024-10-28 08:59:34.954] [config ] [info]       + URL....................................: http://oai-nrf:8080
+[2024-10-28 08:59:34.954] [config ] [info]       + API Version............................: v1
+[2024-10-28 08:59:34.954] [config ] [info]       + IPv4 Address ..........................: 192.168.70.130
+[2024-10-28 08:59:34.954] [config ] [info]     - Heartbeat................................: 10 (seconds)
+[2024-10-28 08:59:34.954] [config ] [info]     - Suspended NF Interval....................: 300 (seconds)
+[2024-10-28 08:59:34.954] [nrf_app] [start] Starting...
+[2024-10-28 08:59:34.954] [nrf_app] [debug] Subscribe to NF status registered event
+[2024-10-28 08:59:34.954] [nrf_app] [debug] Subscribe to NF status deregistered event
+[2024-10-28 08:59:34.954] [nrf_app] [debug] Subscribe to NF status profile changed event
+[2024-10-28 08:59:34.954] [nrf_app] [debug] Subscribe to the remove_suspended_nf expire event
+[2024-10-28 08:59:34.954] [nrf_app] [start] Started
+[2024-10-28 08:59:34.955] [nrf_app] [info] HTTP2 server started
+[2024-10-28 08:59:35.672] [nrf_sbi] [info] Got a request to register an NF instance/Update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 08:59:35.672] [nrf_app] [info] Handle Register NF Instance/Update NF Instance (HTTP version 2)
+[2024-10-28 08:59:35.672] [nrf_app] [debug] NF Profile with ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, NF type UDM
+[2024-10-28 08:59:35.672] [nrf_app] [debug] Convert a json-type profile to a NF profile (profile ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	Instance name: OAI-UDM
+[2024-10-28 08:59:35.672] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:35.672] [nrf_app] [debug] getCustomInfo -> null
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	Heartbeat timer: 50
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	FQDN: oai-udm
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.137
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	UDM profile, UDM Info
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 		 GroupId - oai-udm-testgroupid
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 		 SupiRanges: Start - 208950000000031, End - 208950000000131, Pattern - ^imsi-20895[31-131]{10}$
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 		 GpsiRanges: Start - 752740000, End - 752749999, Pattern - ^gpsi-75274[0-9]{4}$
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 		 Routing Indicators: 0210
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 		 Routing Indicators: 9876
+[2024-10-28 08:59:35.672] [nrf_app] [info] Check if a profile with this ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f exist
+[2024-10-28 08:59:35.672] [nrf_app] [info] NF profile (ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f) not found
+[2024-10-28 08:59:35.672] [nrf_app] [info] Added/Updated NF Profile (ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f) to the DB
+[2024-10-28 08:59:35.672] [nrf_app] [debug] Subscribe to the HeartbeatTimer expire event (after NF registration): interval 20, current time 1730077175672
+[2024-10-28 08:59:35.672] [nrf_app] [info] Handle NF status registered event, profile id 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 08:59:35.672] [nrf_app] [info] 	Find a NF profile with ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 08:59:35.672] [nrf_app] [info] 	Get the list of subscriptions related to this profile, profile id 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	No subscription found
+[2024-10-28 08:59:35.672] [nrf_app] [debug] Added/Updated NF Profile with the NF instance info
+[2024-10-28 08:59:35.672] [nrf_app] [debug] NF instance info
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	Instance name: OAI-UDM
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	Instance type: UDM
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	HeartBeat timer: 10
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	FQDN: oai-udm
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.137
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 	UDM Info
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 		GroupId: oai-udm-testgroupid
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 		 SupiRanges: Start - 208950000000031, End - 208950000000131, Pattern - ^imsi-20895[31-131]{10}$
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 		 GpsiRanges: Start - 752740000, End - 752749999, Pattern - ^gpsi-75274[0-9]{4}$
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 		 Routing Indicators: 0210
+[2024-10-28 08:59:35.672] [nrf_app] [debug] 		 Routing Indicators: 9876
+[2024-10-28 08:59:35.673] [nrf_app] [info] Added/Updated NF Instance, NF info: {"capacity":100,"fqdn":"oai-udm","heartBeatTimer":10,"ipv4Addresses":["192.168.70.137"],"json_data":null,"nfInstanceId":"9e60ecf7-9984-4d36-b00a-e111bf5ffa0f","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[{"end":"752749999","pattern":"^gpsi-75274[0-9]{4}$","start":"752740000"}],"groupId":"oai-udm-testgroupid","internalGroupIdentifiersRanges":[],"routingIndicators":["0210","9876"],"supiRanges":[{"end":"208950000000131","pattern":"^imsi-20895[31-131]{10}$","start":"208950000000031"}]}}
+[2024-10-28 08:59:36.106] [nrf_sbi] [info] Got a request to register an NF instance/Update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 08:59:36.106] [nrf_app] [info] Handle Register NF Instance/Update NF Instance (HTTP version 2)
+[2024-10-28 08:59:36.106] [nrf_app] [debug] NF Profile with ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, NF type AUSF
+[2024-10-28 08:59:36.106] [nrf_app] [debug] Convert a json-type profile to a NF profile (profile ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	Instance name: OAI-AUSF
+[2024-10-28 08:59:36.106] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:36.106] [nrf_app] [debug] getCustomInfo -> null
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	Heartbeat timer: 50
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	FQDN: 
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.138
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	AUSF profile, AUSF Info
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 		 GroupId - oai-ausf-testgroupid
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 		 SupiRanges: Start - q0930j0c80283ncjf, End - , Pattern - 209238210938
+[2024-10-28 08:59:36.106] [nrf_app] [info] Check if a profile with this ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0 exist
+[2024-10-28 08:59:36.106] [nrf_app] [info] NF profile (ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0) not found
+[2024-10-28 08:59:36.106] [nrf_app] [info] Added/Updated NF Profile (ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0) to the DB
+[2024-10-28 08:59:36.106] [nrf_app] [debug] Subscribe to the HeartbeatTimer expire event (after NF registration): interval 20, current time 1730077176106
+[2024-10-28 08:59:36.106] [nrf_app] [info] Handle NF status registered event, profile id bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 08:59:36.106] [nrf_app] [info] 	Find a NF profile with ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 08:59:36.106] [nrf_app] [info] 	Get the list of subscriptions related to this profile, profile id bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	No subscription found
+[2024-10-28 08:59:36.106] [nrf_app] [debug] Added/Updated NF Profile with the NF instance info
+[2024-10-28 08:59:36.106] [nrf_app] [debug] NF instance info
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	Instance name: OAI-AUSF
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	Instance type: AUSF
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	HeartBeat timer: 10
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.138
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 	AUSF Info
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 		GroupId: oai-ausf-testgroupid
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 		 SupiRanges: Start - q0930j0c80283ncjf, End - , Pattern - 209238210938
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 		 Routing Indicators: 0210
+[2024-10-28 08:59:36.106] [nrf_app] [debug] 		 Routing Indicators: 9876
+[2024-10-28 08:59:36.106] [nrf_app] [info] Added/Updated NF Instance, NF info: {"ausfInfo":{"groupId":"oai-ausf-testgroupid","routingIndicators":["0210","9876"],"supiRanges":[{"end":"","pattern":"209238210938","start":"q0930j0c80283ncjf"}]},"capacity":100,"heartBeatTimer":10,"ipv4Addresses":["192.168.70.138"],"json_data":null,"nfInstanceId":"bdea5a64-df45-42eb-bbd9-ff1f1723d5d0","nfInstanceName":"OAI-AUSF","nfServices":[],"nfStatus":"REGISTERED","nfType":"AUSF","priority":1}
+[2024-10-28 08:59:36.546] [nrf_sbi] [info] Got a request to register an NF instance/Update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 08:59:36.546] [nrf_app] [info] Handle Register NF Instance/Update NF Instance (HTTP version 2)
+[2024-10-28 08:59:36.546] [nrf_app] [debug] NF Profile with ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, NF type AMF
+[2024-10-28 08:59:36.546] [nrf_app] [debug] Convert a json-type profile to a NF profile (profile ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	Instance name: OAI-AMF
+[2024-10-28 08:59:36.546] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:36.546] [nrf_app] [debug] getCustomInfo -> null
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	Heartbeat timer: 50
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	SNSSAI (SD, SST): 1, ffffff
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	SNSSAI (SD, SST): 1, 1
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	SNSSAI (SD, SST): 222, 7b
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.132
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	AMF profile, AMF Info
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 		AMF Set ID: 001, AMF Region ID: 01
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 		AMF GUAMI, AMF_ID:  10041
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 		AMF GUAMI, PLMN (MCC: 208, MNC: 95)
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 		AMF GUAMI, AMF_ID:  10041
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 		AMF GUAMI, PLMN (MCC: 001, MNC: 01)
+[2024-10-28 08:59:36.546] [nrf_app] [info] Check if a profile with this ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1 exist
+[2024-10-28 08:59:36.546] [nrf_app] [info] NF profile (ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1) not found
+[2024-10-28 08:59:36.546] [nrf_app] [info] Added/Updated NF Profile (ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1) to the DB
+[2024-10-28 08:59:36.546] [nrf_app] [debug] Subscribe to the HeartbeatTimer expire event (after NF registration): interval 20, current time 1730077176546
+[2024-10-28 08:59:36.546] [nrf_app] [info] Handle NF status registered event, profile id 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 08:59:36.546] [nrf_app] [info] 	Find a NF profile with ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 08:59:36.546] [nrf_app] [info] 	Get the list of subscriptions related to this profile, profile id 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	No subscription found
+[2024-10-28 08:59:36.546] [nrf_app] [debug] Added/Updated NF Profile with the NF instance info
+[2024-10-28 08:59:36.546] [nrf_app] [debug] NF instance info
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	Instance name: OAI-AMF
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	Instance type: AMF
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	HeartBeat timer: 10
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	NNSSAI(SST, SD): 1, ffffff
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	NNSSAI(SST, SD): 1, 1
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	NNSSAI(SST, SD): 222, 7b
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.132
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	NF Service: Service Instance ID: namf_communication, Service name: namf_communication, Version (apiVersionInUri: v1, apiFullVersion: 1.0.0 ), Scheme: http, Service status: REGISTERED,  IpEndPoints: Ipv4 Address: 192.168.70.132, TransportProtocol: , Port: 8080
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 	AMF Info
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 		AMF Set ID: 001, AMF Region ID: 01
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 		AMF GUAMI List, AMF_ID: 10041
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 		AMF GUAMI List, PLMN (MCC: 208, MNC: 95)
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 		AMF GUAMI List, AMF_ID: 10041
+[2024-10-28 08:59:36.546] [nrf_app] [debug] 		AMF GUAMI List, PLMN (MCC: 001, MNC: 01)
+[2024-10-28 08:59:36.546] [nrf_app] [info] Added/Updated NF Instance, NF info: {"amfInfo":{"amfRegionId":"01","amfSetId":"001","guamiList":[{"amfId":"10041","plmnId":{"mcc":"208","mnc":"95"}},{"amfId":"10041","plmnId":{"mcc":"001","mnc":"01"}}]},"capacity":100,"heartBeatTimer":10,"ipv4Addresses":["192.168.70.132"],"json_data":null,"nfInstanceId":"08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1","nfInstanceName":"OAI-AMF","nfServices":[{"ipEndPoints":[{"ipv4Address":"192.168.70.132","port":8080,"transport":""}],"nfServiceStatus":"REGISTERED","scheme":"http","serviceInstanceId":"namf_communication","serviceName":"namf_communication","versions":[{"apiFullVersion":"1.0.0","apiVersionInUri":"v1"}]}],"nfStatus":"REGISTERED","nfType":"AMF","priority":1,"sNssais":[{"sd":"ffffff","sst":1},{"sd":"1","sst":1},{"sd":"7b","sst":222}]}
+[2024-10-28 08:59:37.417] [nrf_sbi] [info] Got a request to register an NF instance/Update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 08:59:37.417] [nrf_app] [info] Handle Register NF Instance/Update NF Instance (HTTP version 2)
+[2024-10-28 08:59:37.417] [nrf_app] [debug] NF Profile with ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, NF type UPF
+[2024-10-28 08:59:37.417] [nrf_app] [debug] Convert a json-type profile to a NF profile (profile ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	Instance name: OAI-UPF
+[2024-10-28 08:59:37.417] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:37.417] [nrf_app] [debug] getCustomInfo -> null
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	Heartbeat timer: 50
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	SNSSAI (SD, SST): 1, 16777215
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	SNSSAI (SD, SST): 1, 1
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	SNSSAI (SD, SST): 222, 123
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	FQDN: 
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.134
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	UPF profile, UPF Info
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 		NSSAI SD: 16777215, SST: 1
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 		DNN: oai
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 		NSSAI SD: 1, SST: 1
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 		DNN: oai.ipv4
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 		NSSAI SD: 123, SST: 222
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 		DNN: default
+[2024-10-28 08:59:37.417] [nrf_app] [info] Check if a profile with this ID 5290fb87-dc05-4119-8b2f-cb61a5f13058 exist
+[2024-10-28 08:59:37.417] [nrf_app] [info] NF profile (ID 5290fb87-dc05-4119-8b2f-cb61a5f13058) not found
+[2024-10-28 08:59:37.417] [nrf_app] [info] Added/Updated NF Profile (ID 5290fb87-dc05-4119-8b2f-cb61a5f13058) to the DB
+[2024-10-28 08:59:37.417] [nrf_app] [debug] Subscribe to the HeartbeatTimer expire event (after NF registration): interval 20, current time 1730077177417
+[2024-10-28 08:59:37.417] [nrf_app] [info] Handle NF status registered event, profile id 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 08:59:37.417] [nrf_app] [info] 	Find a NF profile with ID 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 08:59:37.417] [nrf_app] [info] 	Get the list of subscriptions related to this profile, profile id 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	No subscription found
+[2024-10-28 08:59:37.417] [nrf_app] [debug] Added/Updated NF Profile with the NF instance info
+[2024-10-28 08:59:37.417] [nrf_app] [debug] NF instance info
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	Instance name: OAI-UPF
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	Instance type: UPF
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	HeartBeat timer: 10
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	NNSSAI(SST, SD): 1, 16777215
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	NNSSAI(SST, SD): 1, 1
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	NNSSAI(SST, SD): 222, 123
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.134
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 	UPF Info
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 		SNSSAI UPF Info List, SNSSAI (SD: 16777215, SST: 1)
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 		SNSSAI UPF Info List, DNN List: oai
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 		SNSSAI UPF Info List, SNSSAI (SD: 1, SST: 1)
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 		SNSSAI UPF Info List, DNN List: oai.ipv4
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 		SNSSAI UPF Info List, SNSSAI (SD: 123, SST: 222)
+[2024-10-28 08:59:37.417] [nrf_app] [debug] 		SNSSAI UPF Info List, DNN List: default
+[2024-10-28 08:59:37.417] [nrf_app] [info] Added/Updated NF Instance, NF info: {"capacity":100,"heartBeatTimer":10,"ipv4Addresses":["192.168.70.134"],"json_data":null,"nfInstanceId":"5290fb87-dc05-4119-8b2f-cb61a5f13058","nfInstanceName":"OAI-UPF","nfServices":[],"nfStatus":"REGISTERED","nfType":"UPF","priority":1,"sNssais":[{"sd":"16777215","sst":1},{"sd":"1","sst":1},{"sd":"123","sst":222}],"upfInfo":{"sNssaiUpfInfoList":[{"dnnUpfInfoList":[{"dnn":"oai"}],"sNssai":{"sd":"16777215","sst":1}},{"dnnUpfInfoList":[{"dnn":"oai.ipv4"}],"sNssai":{"sd":"1","sst":1}},{"dnnUpfInfoList":[{"dnn":"default"}],"sNssai":{"sd":"123","sst":222}}]}}
+[2024-10-28 08:59:37.967] [nrf_sbi] [info] Got a request to create a new subscription
+[2024-10-28 08:59:37.967] [nrf_sbi] [debug] Subscription data null
+[2024-10-28 08:59:37.967] [nrf_app] [info] Handle Create a new subscription (HTTP version 2)
+[2024-10-28 08:59:37.967] [nrf_app] [debug] Convert a json-type Subscription data a NRF subscription data
+[2024-10-28 08:59:37.967] [nrf_app] [debug] Subscription condition type: NfTypeCond, nf_type: UPF
+[2024-10-28 08:59:37.967] [nrf_app] [debug] Subscription condition type: NF_TYPE_COND
+[2024-10-28 08:59:37.967] [nrf_app] [debug] ReqNotifEvents: NF_REGISTERED
+[2024-10-28 08:59:37.967] [nrf_app] [debug] ReqNotifEvents: NF_DEREGISTERED
+[2024-10-28 08:59:37.967] [nrf_app] [debug] Validity Time: 20390531T235959
+[2024-10-28 08:59:37.967] [nrf_app] [debug] Added a subscription to the DB
+[2024-10-28 08:59:37.967] [nrf_app] [debug] Subscription information
+[2024-10-28 08:59:37.967] [nrf_app] [debug] 	Sub ID: 1
+[2024-10-28 08:59:37.967] [nrf_app] [debug] 	Notification URI: 192.168.70.133:8080/nsmf-nfstatus-notify/v1/subscriptions
+[2024-10-28 08:59:37.967] [nrf_app] [debug] 	Subscription condition: Type: NF_TYPE_COND, condition: UPF
+[2024-10-28 08:59:37.967] [nrf_app] [debug] 	Notification Events: NF_REGISTERED, NF_DEREGISTERED, 
+[2024-10-28 08:59:37.967] [nrf_app] [debug] 	Validity time: 20390531T235959
+[2024-10-28 08:59:37.967] [nrf_app] [debug] Send notification for the subscribed event to the subscriptions (HTTP VERSION 2)
+[2024-10-28 08:59:37.967] [nrf_app] [debug] NF instance URI: 192.168.70.134
+[2024-10-28 08:59:37.969] [nrf_app] [debug] Got response with HTTP code  204!
+[2024-10-28 08:59:37.974] [nrf_sbi] [info] Got a request to register an NF instance/Update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 08:59:37.974] [nrf_app] [info] Handle Register NF Instance/Update NF Instance (HTTP version 2)
+[2024-10-28 08:59:37.974] [nrf_app] [debug] NF Profile with ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, NF type SMF
+[2024-10-28 08:59:37.974] [nrf_app] [debug] Convert a json-type profile to a NF profile (profile ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	Instance name: OAI-SMF
+[2024-10-28 08:59:37.974] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:37.974] [nrf_app] [debug] getCustomInfo -> null
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	Heartbeat timer: 50
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	SNSSAI (SD, SST): 1, 16777215
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	SNSSAI (SD, SST): 1, 1
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	SNSSAI (SD, SST): 222, 123
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.133
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	SMF profile, SMF Info
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 		NSSAI SD: 16777215, SST: 1
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 		DNN: oai
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 		NSSAI SD: 1, SST: 1
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 		DNN: oai.ipv4
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 		NSSAI SD: 123, SST: 222
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 		DNN: default
+[2024-10-28 08:59:37.974] [nrf_app] [info] Check if a profile with this ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7 exist
+[2024-10-28 08:59:37.974] [nrf_app] [info] NF profile (ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7) not found
+[2024-10-28 08:59:37.974] [nrf_app] [info] Added/Updated NF Profile (ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7) to the DB
+[2024-10-28 08:59:37.974] [nrf_app] [debug] Subscribe to the HeartbeatTimer expire event (after NF registration): interval 20, current time 1730077177974
+[2024-10-28 08:59:37.974] [nrf_app] [info] Handle NF status registered event, profile id b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 08:59:37.974] [nrf_app] [info] 	Find a NF profile with ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 08:59:37.974] [nrf_app] [info] 	Get the list of subscriptions related to this profile, profile id b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 08:59:37.974] [nrf_app] [info] 	Verifying subscription, subscription id 1
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	Current time 20241028T085937.974787
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	No subscription found
+[2024-10-28 08:59:37.974] [nrf_app] [debug] Added/Updated NF Profile with the NF instance info
+[2024-10-28 08:59:37.974] [nrf_app] [debug] NF instance info
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	Instance name: OAI-SMF
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	Instance type: SMF
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	HeartBeat timer: 10
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	NNSSAI(SST, SD): 1, 16777215
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	NNSSAI(SST, SD): 1, 1
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	NNSSAI(SST, SD): 222, 123
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.133
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	NF Service: Service Instance ID: nsmf-pdusession, Service name: nsmf-pdusession, Version (apiVersionInUri: v1, apiFullVersion: 1.0.0 ), Scheme: http, Service status: REGISTERED,  IpEndPoints: Ipv4 Address: 192.168.70.133, TransportProtocol: , Port: 8080
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 	SMF Info
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 		SNSSAI SMF Info List, SNSSAI (SD: 16777215, SST: 1)
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 		SNSSAI SMF Info List, DNN List: oai
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 		SNSSAI SMF Info List, SNSSAI (SD: 1, SST: 1)
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 		SNSSAI SMF Info List, DNN List: oai.ipv4
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 		SNSSAI SMF Info List, SNSSAI (SD: 123, SST: 222)
+[2024-10-28 08:59:37.974] [nrf_app] [debug] 		SNSSAI SMF Info List, DNN List: default
+[2024-10-28 08:59:37.975] [nrf_app] [info] Added/Updated NF Instance, NF info: {"capacity":100,"heartBeatTimer":10,"ipv4Addresses":["192.168.70.133"],"json_data":null,"nfInstanceId":"b471cef5-cdd5-4e9d-b87e-fa94123e74a7","nfInstanceName":"OAI-SMF","nfServices":[{"ipEndPoints":[{"ipv4Address":"192.168.70.133","port":8080,"transport":""}],"nfServiceStatus":"REGISTERED","scheme":"http","serviceInstanceId":"nsmf-pdusession","serviceName":"nsmf-pdusession","versions":[{"apiFullVersion":"1.0.0","apiVersionInUri":"v1"}]}],"nfStatus":"REGISTERED","nfType":"SMF","priority":1,"sNssais":[{"sd":"16777215","sst":1},{"sd":"1","sst":1},{"sd":"123","sst":222}],"smfInfo":{"sNssaiSmfInfoList":[{"dnnSmfInfoList":[{"dnn":"oai"}],"sNssai":{"sd":"16777215","sst":1}},{"dnnSmfInfoList":[{"dnn":"oai.ipv4"}],"sNssai":{"sd":"1","sst":1}},{"dnnSmfInfoList":[{"dnn":"default"}],"sNssai":{"sd":"123","sst":222}}]}}
+[2024-10-28 08:59:45.455] [nrf_sbi] [info] Got a request to register an NF instance/Update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 08:59:45.455] [nrf_app] [info] Handle Register NF Instance/Update NF Instance (HTTP version 2)
+[2024-10-28 08:59:45.455] [nrf_app] [debug] NF Profile with ID 84576f00-142d-42b7-af9f-b3b96943fedb, NF type UDR
+[2024-10-28 08:59:45.455] [nrf_app] [debug] Convert a json-type profile to a NF profile (profile ID: 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	Instance name: OAI-UDR
+[2024-10-28 08:59:45.455] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:45.455] [nrf_app] [debug] getCustomInfo -> null
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	Heartbeat timer: 50
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	FQDN: 
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.136
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	UDR profile, UDR Info
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 		 GroupId - oai-udr-testgroupid
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 		 SupiRanges: Start - 208950000000131, End - , Pattern - ^imsi-20895[31-131]{6}$
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 		 GpsiRanges: Start - 752740000, End - 752749999, Pattern - ^gpsi-75274[0-9]{4}$
+[2024-10-28 08:59:45.455] [nrf_app] [info] Check if a profile with this ID 84576f00-142d-42b7-af9f-b3b96943fedb exist
+[2024-10-28 08:59:45.455] [nrf_app] [info] NF profile (ID 84576f00-142d-42b7-af9f-b3b96943fedb) not found
+[2024-10-28 08:59:45.455] [nrf_app] [info] Added/Updated NF Profile (ID 84576f00-142d-42b7-af9f-b3b96943fedb) to the DB
+[2024-10-28 08:59:45.455] [nrf_app] [debug] Subscribe to the HeartbeatTimer expire event (after NF registration): interval 20, current time 1730077185455
+[2024-10-28 08:59:45.455] [nrf_app] [info] Handle NF status registered event, profile id 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 08:59:45.455] [nrf_app] [info] 	Find a NF profile with ID 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 08:59:45.455] [nrf_app] [info] 	Get the list of subscriptions related to this profile, profile id 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 08:59:45.455] [nrf_app] [info] 	Verifying subscription, subscription id 1
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	Current time 20241028T085945.455511
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	No subscription found
+[2024-10-28 08:59:45.455] [nrf_app] [debug] Added/Updated NF Profile with the NF instance info
+[2024-10-28 08:59:45.455] [nrf_app] [debug] NF instance info
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	Instance name: OAI-UDR
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	Instance type: UDR
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	HeartBeat timer: 10
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.136
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 	UDR Info
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 		GroupId: oai-udr-testgroupid
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 		 SupiRanges: Start - 208950000000131, End - , Pattern - ^imsi-20895[31-131]{6}$
+[2024-10-28 08:59:45.455] [nrf_app] [debug] 		 GpsiRanges: Start - 752740000, End - 752749999, Pattern - ^gpsi-75274[0-9]{4}$
+[2024-10-28 08:59:45.455] [nrf_app] [info] Added/Updated NF Instance, NF info: {"capacity":100,"heartBeatTimer":10,"ipv4Addresses":["192.168.70.136"],"json_data":null,"nfInstanceId":"84576f00-142d-42b7-af9f-b3b96943fedb","nfInstanceName":"OAI-UDR","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDR","priority":1,"udrInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[{"end":"752749999","pattern":"^gpsi-75274[0-9]{4}$","start":"752740000"}],"groupId":"oai-udr-testgroupid","routingIndicators":[],"supiRanges":[{"end":"","pattern":"^imsi-20895[31-131]{6}$","start":"208950000000131"}]}}
+[2024-10-28 08:59:45.682] [nrf_sbi] [info] 
+[2024-10-28 08:59:45.682] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 08:59:45.682] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 08:59:45.682] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 08:59:45.682] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 08:59:45.682] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 08:59:45.682] [nrf_app] [debug] NF update for Heartbeat, current time 1730077185682
+[2024-10-28 08:59:45.682] [nrf_app] [debug] Unsubscribe to the first Heartbeat Timer timeout event (after NF Registration)
+[2024-10-28 08:59:45.732] [nrf_app] [debug] Subscribe to HBT (NF update), current time 1730077185732
+[2024-10-28 08:59:45.732] [nrf_app] [debug] Subscribe to HeartbeatTimer expire event (after NF update): interval 10, current time 1730077185732
+[2024-10-28 08:59:45.732] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:45.732] [nrf_sbi] [debug] Json data: null
+[2024-10-28 08:59:46.115] [nrf_sbi] [info] 
+[2024-10-28 08:59:46.115] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 08:59:46.115] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 08:59:46.115] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 08:59:46.115] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 08:59:46.115] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 08:59:46.115] [nrf_app] [debug] NF update for Heartbeat, current time 1730077186115
+[2024-10-28 08:59:46.115] [nrf_app] [debug] Unsubscribe to the first Heartbeat Timer timeout event (after NF Registration)
+[2024-10-28 08:59:46.165] [nrf_app] [debug] Subscribe to HBT (NF update), current time 1730077186165
+[2024-10-28 08:59:46.165] [nrf_app] [debug] Subscribe to HeartbeatTimer expire event (after NF update): interval 10, current time 1730077186165
+[2024-10-28 08:59:46.165] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:46.165] [nrf_sbi] [debug] Json data: null
+[2024-10-28 08:59:46.548] [nrf_sbi] [info] 
+[2024-10-28 08:59:46.548] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 08:59:46.548] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 08:59:46.548] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 08:59:46.548] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 08:59:46.548] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 08:59:46.548] [nrf_app] [debug] NF update for Heartbeat, current time 1730077186548
+[2024-10-28 08:59:46.548] [nrf_app] [debug] Unsubscribe to the first Heartbeat Timer timeout event (after NF Registration)
+[2024-10-28 08:59:46.599] [nrf_app] [debug] Subscribe to HBT (NF update), current time 1730077186599
+[2024-10-28 08:59:46.599] [nrf_app] [debug] Subscribe to HeartbeatTimer expire event (after NF update): interval 10, current time 1730077186599
+[2024-10-28 08:59:46.599] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:46.599] [nrf_sbi] [debug] Json data: null
+[2024-10-28 08:59:47.420] [nrf_sbi] [info] 
+[2024-10-28 08:59:47.420] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 08:59:47.420] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 08:59:47.420] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 08:59:47.420] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 08:59:47.420] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 08:59:47.420] [nrf_app] [debug] NF update for Heartbeat, current time 1730077187420
+[2024-10-28 08:59:47.420] [nrf_app] [debug] Unsubscribe to the first Heartbeat Timer timeout event (after NF Registration)
+[2024-10-28 08:59:47.470] [nrf_app] [debug] Subscribe to HBT (NF update), current time 1730077187470
+[2024-10-28 08:59:47.470] [nrf_app] [debug] Subscribe to HeartbeatTimer expire event (after NF update): interval 10, current time 1730077187470
+[2024-10-28 08:59:47.470] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:47.470] [nrf_sbi] [debug] Json data: null
+[2024-10-28 08:59:49.972] [nrf_sbi] [info] 
+[2024-10-28 08:59:49.972] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 08:59:49.972] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 08:59:49.972] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 08:59:49.972] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 08:59:49.972] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 08:59:49.972] [nrf_app] [debug] NF update for Heartbeat, current time 1730077189972
+[2024-10-28 08:59:49.972] [nrf_app] [debug] Unsubscribe to the first Heartbeat Timer timeout event (after NF Registration)
+[2024-10-28 08:59:50.022] [nrf_app] [debug] Subscribe to HBT (NF update), current time 1730077190022
+[2024-10-28 08:59:50.022] [nrf_app] [debug] Subscribe to HeartbeatTimer expire event (after NF update): interval 10, current time 1730077190022
+[2024-10-28 08:59:50.022] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:50.022] [nrf_sbi] [debug] Json data: null
+[2024-10-28 08:59:55.455] [nrf_sbi] [info] 
+[2024-10-28 08:59:55.455] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 08:59:55.455] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 08:59:55.455] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 08:59:55.455] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 08:59:55.455] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 08:59:55.455] [nrf_app] [debug] NF update for Heartbeat, current time 1730077195455
+[2024-10-28 08:59:55.455] [nrf_app] [debug] Unsubscribe to the first Heartbeat Timer timeout event (after NF Registration)
+[2024-10-28 08:59:55.505] [nrf_app] [debug] Subscribe to HBT (NF update), current time 1730077195505
+[2024-10-28 08:59:55.505] [nrf_app] [debug] Subscribe to HeartbeatTimer expire event (after NF update): interval 10, current time 1730077195505
+[2024-10-28 08:59:55.505] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:55.505] [nrf_sbi] [debug] Json data: null
+[2024-10-28 08:59:55.733] [nrf_sbi] [info] 
+[2024-10-28 08:59:55.733] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 08:59:55.733] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 08:59:55.733] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 08:59:55.733] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 08:59:55.733] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 08:59:55.733] [nrf_app] [debug] NF update for Heartbeat, current time 1730077195733
+[2024-10-28 08:59:55.733] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:55.733] [nrf_sbi] [debug] Json data: null
+[2024-10-28 08:59:56.166] [nrf_sbi] [info] 
+[2024-10-28 08:59:56.166] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 08:59:56.166] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 08:59:56.166] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 08:59:56.166] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 08:59:56.166] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 08:59:56.167] [nrf_app] [debug] NF update for Heartbeat, current time 1730077196166
+[2024-10-28 08:59:56.167] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:56.167] [nrf_sbi] [debug] Json data: null
+[2024-10-28 08:59:56.602] [nrf_sbi] [info] 
+[2024-10-28 08:59:56.603] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 08:59:56.603] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 08:59:56.603] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 08:59:56.603] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 08:59:56.603] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 08:59:56.603] [nrf_app] [debug] NF update for Heartbeat, current time 1730077196603
+[2024-10-28 08:59:56.603] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:56.603] [nrf_sbi] [debug] Json data: null
+[2024-10-28 08:59:57.420] [nrf_sbi] [info] 
+[2024-10-28 08:59:57.420] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 08:59:57.420] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 08:59:57.420] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 08:59:57.420] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 08:59:57.420] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 08:59:57.420] [nrf_app] [debug] NF update for Heartbeat, current time 1730077197420
+[2024-10-28 08:59:57.420] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:57.420] [nrf_sbi] [debug] Json data: null
+[2024-10-28 08:59:57.743] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077197732, current ms 1730077197743
+[2024-10-28 08:59:58.176] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077198165, current ms 1730077198176
+[2024-10-28 08:59:58.610] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077198599, current ms 1730077198610
+[2024-10-28 08:59:59.481] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077199470, current ms 1730077199481
+[2024-10-28 08:59:59.972] [nrf_sbi] [info] 
+[2024-10-28 08:59:59.972] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 08:59:59.972] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 08:59:59.972] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 08:59:59.973] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 08:59:59.973] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 08:59:59.973] [nrf_app] [debug] NF update for Heartbeat, current time 1730077199973
+[2024-10-28 08:59:59.973] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 08:59:59.973] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:02.033] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077202022, current ms 1730077202033
+[2024-10-28 09:00:05.505] [nrf_sbi] [info] 
+[2024-10-28 09:00:05.505] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:00:05.505] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:05.505] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:05.505] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:05.505] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:00:05.505] [nrf_app] [debug] NF update for Heartbeat, current time 1730077205505
+[2024-10-28 09:00:05.505] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:05.505] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:05.735] [nrf_sbi] [info] 
+[2024-10-28 09:00:05.735] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:00:05.735] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:05.735] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:05.735] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:05.735] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:00:05.735] [nrf_app] [debug] NF update for Heartbeat, current time 1730077205735
+[2024-10-28 09:00:05.735] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:05.735] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:06.168] [nrf_sbi] [info] 
+[2024-10-28 09:00:06.168] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:00:06.168] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:06.168] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:06.168] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:06.168] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:00:06.168] [nrf_app] [debug] NF update for Heartbeat, current time 1730077206168
+[2024-10-28 09:00:06.168] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:06.168] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:06.606] [nrf_sbi] [info] 
+[2024-10-28 09:00:06.606] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:00:06.606] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:06.606] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:06.606] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:06.606] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:00:06.606] [nrf_app] [debug] NF update for Heartbeat, current time 1730077206606
+[2024-10-28 09:00:06.606] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:06.606] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:07.420] [nrf_sbi] [info] 
+[2024-10-28 09:00:07.420] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:00:07.420] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:07.420] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:07.420] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:07.420] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:00:07.420] [nrf_app] [debug] NF update for Heartbeat, current time 1730077207420
+[2024-10-28 09:00:07.420] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:07.420] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:07.516] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077207505, current ms 1730077207516
+[2024-10-28 09:00:07.743] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077207732, current ms 1730077207743
+[2024-10-28 09:00:08.176] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077208165, current ms 1730077208176
+[2024-10-28 09:00:08.610] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077208599, current ms 1730077208610
+[2024-10-28 09:00:09.481] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077209470, current ms 1730077209481
+[2024-10-28 09:00:09.752] [nrf_sbi] [debug] /nnrf-nfm/ query params - nfType: AMF, limit_nfs: , 
+[2024-10-28 09:00:09.752] [nrf_sbi] [info] Got a request to retrieve  a collection of NF Instances
+[2024-10-28 09:00:09.752] [nrf_sbi] [debug] 	NF type:  AMF
+[2024-10-28 09:00:09.752] [nrf_app] [info] Handle Retrieve a collection of NF Instances (HTTP version 2)
+[2024-10-28 09:00:09.752] [nrf_app] [debug] NF instance info
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 	Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 	Instance name: OAI-AMF
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 	Instance type: AMF
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 	HeartBeat timer: 10
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 	NNSSAI(SST, SD): 1, ffffff
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 	NNSSAI(SST, SD): 1, 1
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 	NNSSAI(SST, SD): 222, 7b
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.132
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 	NF Service: Service Instance ID: namf_communication, Service name: namf_communication, Version (apiVersionInUri: v1, apiFullVersion: 1.0.0 ), Scheme: http, Service status: REGISTERED,  IpEndPoints: Ipv4 Address: 192.168.70.132, TransportProtocol: , Port: 8080
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 	AMF Info
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 		AMF Set ID: 001, AMF Region ID: 01
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 		AMF GUAMI List, AMF_ID: 10041
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 		AMF GUAMI List, PLMN (MCC: 208, MNC: 95)
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 		AMF GUAMI List, AMF_ID: 10041
+[2024-10-28 09:00:09.752] [nrf_app] [debug] 		AMF GUAMI List, PLMN (MCC: 001, MNC: 01)
+[2024-10-28 09:00:09.771] [nrf_sbi] [debug] /nnrf-nfm/ query params - nfType: SMF, limit_nfs: , 
+[2024-10-28 09:00:09.771] [nrf_sbi] [info] Got a request to retrieve  a collection of NF Instances
+[2024-10-28 09:00:09.771] [nrf_sbi] [debug] 	NF type:  SMF
+[2024-10-28 09:00:09.771] [nrf_app] [info] Handle Retrieve a collection of NF Instances (HTTP version 2)
+[2024-10-28 09:00:09.771] [nrf_app] [debug] NF instance info
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 	Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 	Instance name: OAI-SMF
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 	Instance type: SMF
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 	HeartBeat timer: 10
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 	NNSSAI(SST, SD): 1, 16777215
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 	NNSSAI(SST, SD): 1, 1
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 	NNSSAI(SST, SD): 222, 123
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.133
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 	NF Service: Service Instance ID: nsmf-pdusession, Service name: nsmf-pdusession, Version (apiVersionInUri: v1, apiFullVersion: 1.0.0 ), Scheme: http, Service status: REGISTERED,  IpEndPoints: Ipv4 Address: 192.168.70.133, TransportProtocol: , Port: 8080
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 	SMF Info
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 		SNSSAI SMF Info List, SNSSAI (SD: 16777215, SST: 1)
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 		SNSSAI SMF Info List, DNN List: oai
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 		SNSSAI SMF Info List, SNSSAI (SD: 1, SST: 1)
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 		SNSSAI SMF Info List, DNN List: oai.ipv4
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 		SNSSAI SMF Info List, SNSSAI (SD: 123, SST: 222)
+[2024-10-28 09:00:09.771] [nrf_app] [debug] 		SNSSAI SMF Info List, DNN List: default
+[2024-10-28 09:00:09.780] [nrf_sbi] [debug] /nnrf-nfm/ query params - nfType: UPF, limit_nfs: , 
+[2024-10-28 09:00:09.780] [nrf_sbi] [info] Got a request to retrieve  a collection of NF Instances
+[2024-10-28 09:00:09.780] [nrf_sbi] [debug] 	NF type:  UPF
+[2024-10-28 09:00:09.780] [nrf_app] [info] Handle Retrieve a collection of NF Instances (HTTP version 2)
+[2024-10-28 09:00:09.780] [nrf_app] [debug] NF instance info
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 	Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 	Instance name: OAI-UPF
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 	Instance type: UPF
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 	HeartBeat timer: 10
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 	NNSSAI(SST, SD): 1, 16777215
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 	NNSSAI(SST, SD): 1, 1
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 	NNSSAI(SST, SD): 222, 123
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.134
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 	UPF Info
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 		SNSSAI UPF Info List, SNSSAI (SD: 16777215, SST: 1)
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 		SNSSAI UPF Info List, DNN List: oai
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 		SNSSAI UPF Info List, SNSSAI (SD: 1, SST: 1)
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 		SNSSAI UPF Info List, DNN List: oai.ipv4
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 		SNSSAI UPF Info List, SNSSAI (SD: 123, SST: 222)
+[2024-10-28 09:00:09.780] [nrf_app] [debug] 		SNSSAI UPF Info List, DNN List: default
+[2024-10-28 09:00:09.794] [nrf_sbi] [debug] /nnrf-nfm/ query params - nfType: AUSF, limit_nfs: , 
+[2024-10-28 09:00:09.794] [nrf_sbi] [info] Got a request to retrieve  a collection of NF Instances
+[2024-10-28 09:00:09.794] [nrf_sbi] [debug] 	NF type:  AUSF
+[2024-10-28 09:00:09.794] [nrf_app] [info] Handle Retrieve a collection of NF Instances (HTTP version 2)
+[2024-10-28 09:00:09.794] [nrf_app] [debug] NF instance info
+[2024-10-28 09:00:09.794] [nrf_app] [debug] 	Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:00:09.794] [nrf_app] [debug] 	Instance name: OAI-AUSF
+[2024-10-28 09:00:09.794] [nrf_app] [debug] 	Instance type: AUSF
+[2024-10-28 09:00:09.794] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 09:00:09.794] [nrf_app] [debug] 	HeartBeat timer: 10
+[2024-10-28 09:00:09.794] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 09:00:09.794] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 09:00:09.794] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.138
+[2024-10-28 09:00:09.794] [nrf_app] [debug] 	AUSF Info
+[2024-10-28 09:00:09.794] [nrf_app] [debug] 		GroupId: oai-ausf-testgroupid
+[2024-10-28 09:00:09.794] [nrf_app] [debug] 		 SupiRanges: Start - q0930j0c80283ncjf, End - , Pattern - 209238210938
+[2024-10-28 09:00:09.794] [nrf_app] [debug] 		 Routing Indicators: 0210
+[2024-10-28 09:00:09.794] [nrf_app] [debug] 		 Routing Indicators: 9876
+[2024-10-28 09:00:09.809] [nrf_sbi] [debug] /nnrf-nfm/ query params - nfType: UDM, limit_nfs: , 
+[2024-10-28 09:00:09.809] [nrf_sbi] [info] Got a request to retrieve  a collection of NF Instances
+[2024-10-28 09:00:09.809] [nrf_sbi] [debug] 	NF type:  UDM
+[2024-10-28 09:00:09.809] [nrf_app] [info] Handle Retrieve a collection of NF Instances (HTTP version 2)
+[2024-10-28 09:00:09.809] [nrf_app] [debug] NF instance info
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 	Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 	Instance name: OAI-UDM
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 	Instance type: UDM
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 	HeartBeat timer: 10
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 	FQDN: oai-udm
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.137
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 	UDM Info
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 		GroupId: oai-udm-testgroupid
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 		 SupiRanges: Start - 208950000000031, End - 208950000000131, Pattern - ^imsi-20895[31-131]{10}$
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 		 GpsiRanges: Start - 752740000, End - 752749999, Pattern - ^gpsi-75274[0-9]{4}$
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 		 Routing Indicators: 0210
+[2024-10-28 09:00:09.809] [nrf_app] [debug] 		 Routing Indicators: 9876
+[2024-10-28 09:00:09.825] [nrf_sbi] [debug] /nnrf-nfm/ query params - nfType: UDR, limit_nfs: , 
+[2024-10-28 09:00:09.825] [nrf_sbi] [info] Got a request to retrieve  a collection of NF Instances
+[2024-10-28 09:00:09.825] [nrf_sbi] [debug] 	NF type:  UDR
+[2024-10-28 09:00:09.825] [nrf_app] [info] Handle Retrieve a collection of NF Instances (HTTP version 2)
+[2024-10-28 09:00:09.825] [nrf_app] [debug] NF instance info
+[2024-10-28 09:00:09.825] [nrf_app] [debug] 	Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:00:09.825] [nrf_app] [debug] 	Instance name: OAI-UDR
+[2024-10-28 09:00:09.825] [nrf_app] [debug] 	Instance type: UDR
+[2024-10-28 09:00:09.825] [nrf_app] [debug] 	Status: REGISTERED
+[2024-10-28 09:00:09.825] [nrf_app] [debug] 	HeartBeat timer: 10
+[2024-10-28 09:00:09.825] [nrf_app] [debug] 	Priority: 1
+[2024-10-28 09:00:09.825] [nrf_app] [debug] 	Capacity: 100
+[2024-10-28 09:00:09.825] [nrf_app] [debug] 	IPv4 Addr: 192.168.70.136
+[2024-10-28 09:00:09.825] [nrf_app] [debug] 	UDR Info
+[2024-10-28 09:00:09.825] [nrf_app] [debug] 		GroupId: oai-udr-testgroupid
+[2024-10-28 09:00:09.825] [nrf_app] [debug] 		 SupiRanges: Start - 208950000000131, End - , Pattern - ^imsi-20895[31-131]{6}$
+[2024-10-28 09:00:09.825] [nrf_app] [debug] 		 GpsiRanges: Start - 752740000, End - 752749999, Pattern - ^gpsi-75274[0-9]{4}$
+[2024-10-28 09:00:09.973] [nrf_sbi] [info] 
+[2024-10-28 09:00:09.973] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:00:09.973] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:09.973] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:09.973] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:09.973] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:00:09.973] [nrf_app] [debug] NF update for Heartbeat, current time 1730077209973
+[2024-10-28 09:00:09.973] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:09.973] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:12.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077212022, current ms 1730077212035
+[2024-10-28 09:00:15.508] [nrf_sbi] [info] 
+[2024-10-28 09:00:15.508] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:00:15.508] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:15.508] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:15.508] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:15.508] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:00:15.508] [nrf_app] [debug] NF update for Heartbeat, current time 1730077215508
+[2024-10-28 09:00:15.508] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:15.508] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:15.740] [nrf_sbi] [info] 
+[2024-10-28 09:00:15.741] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:00:15.741] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:15.741] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:15.741] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:15.741] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:00:15.741] [nrf_app] [debug] NF update for Heartbeat, current time 1730077215741
+[2024-10-28 09:00:15.741] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:15.741] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:16.172] [nrf_sbi] [info] 
+[2024-10-28 09:00:16.172] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:00:16.172] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:16.172] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:16.172] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:16.172] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:00:16.172] [nrf_app] [debug] NF update for Heartbeat, current time 1730077216172
+[2024-10-28 09:00:16.172] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:16.172] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:16.609] [nrf_sbi] [info] 
+[2024-10-28 09:00:16.609] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:00:16.609] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:16.609] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:16.609] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:16.609] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:00:16.609] [nrf_app] [debug] NF update for Heartbeat, current time 1730077216609
+[2024-10-28 09:00:16.609] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:16.609] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:17.422] [nrf_sbi] [info] 
+[2024-10-28 09:00:17.422] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:00:17.422] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:17.422] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:17.422] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:17.422] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:00:17.422] [nrf_app] [debug] NF update for Heartbeat, current time 1730077217422
+[2024-10-28 09:00:17.422] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:17.422] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:17.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077217505, current ms 1730077217518
+[2024-10-28 09:00:17.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077217732, current ms 1730077217745
+[2024-10-28 09:00:18.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077218165, current ms 1730077218178
+[2024-10-28 09:00:18.612] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077218599, current ms 1730077218612
+[2024-10-28 09:00:19.483] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077219470, current ms 1730077219483
+[2024-10-28 09:00:19.973] [nrf_sbi] [info] 
+[2024-10-28 09:00:19.973] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:00:19.973] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:19.973] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:19.973] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:19.973] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:00:19.973] [nrf_app] [debug] NF update for Heartbeat, current time 1730077219973
+[2024-10-28 09:00:19.973] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:19.973] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:22.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077222022, current ms 1730077222035
+[2024-10-28 09:00:25.511] [nrf_sbi] [info] 
+[2024-10-28 09:00:25.511] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:00:25.511] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:25.511] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:25.511] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:25.511] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:00:25.511] [nrf_app] [debug] NF update for Heartbeat, current time 1730077225511
+[2024-10-28 09:00:25.511] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:25.511] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:25.743] [nrf_sbi] [info] 
+[2024-10-28 09:00:25.743] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:00:25.743] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:25.743] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:25.743] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:25.743] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:00:25.743] [nrf_app] [debug] NF update for Heartbeat, current time 1730077225743
+[2024-10-28 09:00:25.743] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:25.743] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:26.173] [nrf_sbi] [info] 
+[2024-10-28 09:00:26.173] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:00:26.173] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:26.173] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:26.173] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:26.173] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:00:26.174] [nrf_app] [debug] NF update for Heartbeat, current time 1730077226174
+[2024-10-28 09:00:26.174] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:26.174] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:26.613] [nrf_sbi] [info] 
+[2024-10-28 09:00:26.613] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:00:26.613] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:26.613] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:26.613] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:26.613] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:00:26.613] [nrf_app] [debug] NF update for Heartbeat, current time 1730077226613
+[2024-10-28 09:00:26.613] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:26.613] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:27.422] [nrf_sbi] [info] 
+[2024-10-28 09:00:27.422] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:00:27.422] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:27.422] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:27.422] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:27.422] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:00:27.422] [nrf_app] [debug] NF update for Heartbeat, current time 1730077227422
+[2024-10-28 09:00:27.422] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:27.422] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:27.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077227505, current ms 1730077227518
+[2024-10-28 09:00:27.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077227732, current ms 1730077227745
+[2024-10-28 09:00:28.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077228165, current ms 1730077228178
+[2024-10-28 09:00:28.612] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077228599, current ms 1730077228612
+[2024-10-28 09:00:29.483] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077229470, current ms 1730077229483
+[2024-10-28 09:00:29.973] [nrf_sbi] [info] 
+[2024-10-28 09:00:29.973] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:00:29.973] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:29.973] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:29.973] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:29.973] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:00:29.973] [nrf_app] [debug] NF update for Heartbeat, current time 1730077229973
+[2024-10-28 09:00:29.973] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:29.973] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:32.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077232022, current ms 1730077232035
+[2024-10-28 09:00:35.512] [nrf_sbi] [info] 
+[2024-10-28 09:00:35.512] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:00:35.512] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:35.512] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:35.512] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:35.513] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:00:35.513] [nrf_app] [debug] NF update for Heartbeat, current time 1730077235513
+[2024-10-28 09:00:35.513] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:35.513] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:35.745] [nrf_sbi] [info] 
+[2024-10-28 09:00:35.745] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:00:35.745] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:35.745] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:35.745] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:35.745] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:00:35.745] [nrf_app] [debug] NF update for Heartbeat, current time 1730077235745
+[2024-10-28 09:00:35.745] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:35.745] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:36.175] [nrf_sbi] [info] 
+[2024-10-28 09:00:36.175] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:00:36.175] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:36.175] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:36.175] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:36.175] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:00:36.175] [nrf_app] [debug] NF update for Heartbeat, current time 1730077236175
+[2024-10-28 09:00:36.175] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:36.175] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:36.616] [nrf_sbi] [info] 
+[2024-10-28 09:00:36.616] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:00:36.616] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:36.616] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:36.616] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:36.616] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:00:36.616] [nrf_app] [debug] NF update for Heartbeat, current time 1730077236616
+[2024-10-28 09:00:36.616] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:36.616] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:37.423] [nrf_sbi] [info] 
+[2024-10-28 09:00:37.423] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:00:37.423] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:37.423] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:37.423] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:37.423] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:00:37.423] [nrf_app] [debug] NF update for Heartbeat, current time 1730077237423
+[2024-10-28 09:00:37.423] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:37.423] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:37.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077237505, current ms 1730077237518
+[2024-10-28 09:00:37.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077237732, current ms 1730077237745
+[2024-10-28 09:00:38.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077238165, current ms 1730077238178
+[2024-10-28 09:00:38.612] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077238599, current ms 1730077238612
+[2024-10-28 09:00:39.483] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077239470, current ms 1730077239483
+[2024-10-28 09:00:39.974] [nrf_sbi] [info] 
+[2024-10-28 09:00:39.974] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:00:39.974] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:39.974] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:39.974] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:39.974] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:00:39.974] [nrf_app] [debug] NF update for Heartbeat, current time 1730077239974
+[2024-10-28 09:00:39.974] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:39.974] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:42.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077242022, current ms 1730077242035
+[2024-10-28 09:00:45.513] [nrf_sbi] [info] 
+[2024-10-28 09:00:45.513] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:00:45.513] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:45.513] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:45.513] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:45.513] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:00:45.513] [nrf_app] [debug] NF update for Heartbeat, current time 1730077245513
+[2024-10-28 09:00:45.513] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:45.513] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:45.745] [nrf_sbi] [info] 
+[2024-10-28 09:00:45.745] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:00:45.745] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:45.745] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:45.745] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:45.745] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:00:45.745] [nrf_app] [debug] NF update for Heartbeat, current time 1730077245745
+[2024-10-28 09:00:45.745] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:45.745] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:46.175] [nrf_sbi] [info] 
+[2024-10-28 09:00:46.175] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:00:46.175] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:46.175] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:46.175] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:46.175] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:00:46.175] [nrf_app] [debug] NF update for Heartbeat, current time 1730077246175
+[2024-10-28 09:00:46.175] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:46.175] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:46.619] [nrf_sbi] [info] 
+[2024-10-28 09:00:46.619] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:00:46.619] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:46.619] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:46.619] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:46.619] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:00:46.619] [nrf_app] [debug] NF update for Heartbeat, current time 1730077246619
+[2024-10-28 09:00:46.619] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:46.619] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:47.421] [nrf_sbi] [info] 
+[2024-10-28 09:00:47.421] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:00:47.421] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:47.421] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:47.421] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:47.421] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:00:47.421] [nrf_app] [debug] NF update for Heartbeat, current time 1730077247421
+[2024-10-28 09:00:47.421] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:47.421] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:47.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077247505, current ms 1730077247518
+[2024-10-28 09:00:47.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077247732, current ms 1730077247745
+[2024-10-28 09:00:48.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077248165, current ms 1730077248178
+[2024-10-28 09:00:48.612] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077248599, current ms 1730077248612
+[2024-10-28 09:00:49.483] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077249470, current ms 1730077249483
+[2024-10-28 09:00:49.974] [nrf_sbi] [info] 
+[2024-10-28 09:00:49.974] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:00:49.974] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:49.974] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:49.974] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:49.974] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:00:49.974] [nrf_app] [debug] NF update for Heartbeat, current time 1730077249974
+[2024-10-28 09:00:49.974] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:49.974] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:52.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077252022, current ms 1730077252035
+[2024-10-28 09:00:55.517] [nrf_sbi] [info] 
+[2024-10-28 09:00:55.517] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:00:55.517] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:55.517] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:55.517] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:55.517] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:00:55.517] [nrf_app] [debug] NF update for Heartbeat, current time 1730077255517
+[2024-10-28 09:00:55.517] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:55.517] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:55.750] [nrf_sbi] [info] 
+[2024-10-28 09:00:55.750] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:00:55.750] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:55.750] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:55.750] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:55.750] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:00:55.750] [nrf_app] [debug] NF update for Heartbeat, current time 1730077255750
+[2024-10-28 09:00:55.750] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:55.750] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:56.177] [nrf_sbi] [info] 
+[2024-10-28 09:00:56.177] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:00:56.177] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:56.177] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:56.177] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:56.177] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:00:56.177] [nrf_app] [debug] NF update for Heartbeat, current time 1730077256177
+[2024-10-28 09:00:56.177] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:56.177] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:56.621] [nrf_sbi] [info] 
+[2024-10-28 09:00:56.621] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:00:56.621] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:56.621] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:56.621] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:56.621] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:00:56.621] [nrf_app] [debug] NF update for Heartbeat, current time 1730077256621
+[2024-10-28 09:00:56.621] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:56.621] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:57.422] [nrf_sbi] [info] 
+[2024-10-28 09:00:57.422] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:00:57.422] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:57.422] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:57.422] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:57.422] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:00:57.422] [nrf_app] [debug] NF update for Heartbeat, current time 1730077257422
+[2024-10-28 09:00:57.422] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:57.422] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:00:57.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077257505, current ms 1730077257518
+[2024-10-28 09:00:57.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077257732, current ms 1730077257745
+[2024-10-28 09:00:58.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077258165, current ms 1730077258178
+[2024-10-28 09:00:58.612] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077258599, current ms 1730077258612
+[2024-10-28 09:00:59.483] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077259470, current ms 1730077259483
+[2024-10-28 09:00:59.974] [nrf_sbi] [info] 
+[2024-10-28 09:00:59.974] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:00:59.974] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:00:59.974] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:00:59.974] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:00:59.974] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:00:59.974] [nrf_app] [debug] NF update for Heartbeat, current time 1730077259974
+[2024-10-28 09:00:59.974] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:00:59.974] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:02.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077262022, current ms 1730077262035
+[2024-10-28 09:01:05.519] [nrf_sbi] [info] 
+[2024-10-28 09:01:05.519] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:01:05.519] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:05.519] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:05.519] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:05.519] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:01:05.519] [nrf_app] [debug] NF update for Heartbeat, current time 1730077265519
+[2024-10-28 09:01:05.519] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:05.519] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:05.751] [nrf_sbi] [info] 
+[2024-10-28 09:01:05.751] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:01:05.752] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:05.752] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:05.752] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:05.752] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:01:05.752] [nrf_app] [debug] NF update for Heartbeat, current time 1730077265752
+[2024-10-28 09:01:05.752] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:05.752] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:06.179] [nrf_sbi] [info] 
+[2024-10-28 09:01:06.179] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:01:06.179] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:06.179] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:06.179] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:06.179] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:01:06.179] [nrf_app] [debug] NF update for Heartbeat, current time 1730077266179
+[2024-10-28 09:01:06.180] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:06.180] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:06.623] [nrf_sbi] [info] 
+[2024-10-28 09:01:06.623] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:01:06.623] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:06.623] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:06.623] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:06.623] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:01:06.623] [nrf_app] [debug] NF update for Heartbeat, current time 1730077266623
+[2024-10-28 09:01:06.623] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:06.623] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:07.423] [nrf_sbi] [info] 
+[2024-10-28 09:01:07.423] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:01:07.423] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:07.423] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:07.423] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:07.424] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:01:07.424] [nrf_app] [debug] NF update for Heartbeat, current time 1730077267424
+[2024-10-28 09:01:07.424] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:07.424] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:07.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077267505, current ms 1730077267518
+[2024-10-28 09:01:07.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077267732, current ms 1730077267745
+[2024-10-28 09:01:08.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077268165, current ms 1730077268178
+[2024-10-28 09:01:08.612] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077268599, current ms 1730077268612
+[2024-10-28 09:01:09.483] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077269470, current ms 1730077269483
+[2024-10-28 09:01:09.974] [nrf_sbi] [info] 
+[2024-10-28 09:01:09.974] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:01:09.974] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:09.974] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:09.974] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:09.974] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:01:09.974] [nrf_app] [debug] NF update for Heartbeat, current time 1730077269974
+[2024-10-28 09:01:09.974] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:09.974] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:12.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077272022, current ms 1730077272035
+[2024-10-28 09:01:15.521] [nrf_sbi] [info] 
+[2024-10-28 09:01:15.521] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:01:15.521] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:15.521] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:15.521] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:15.521] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:01:15.521] [nrf_app] [debug] NF update for Heartbeat, current time 1730077275521
+[2024-10-28 09:01:15.521] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:15.521] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:15.752] [nrf_sbi] [info] 
+[2024-10-28 09:01:15.752] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:01:15.752] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:15.752] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:15.752] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:15.752] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:01:15.752] [nrf_app] [debug] NF update for Heartbeat, current time 1730077275752
+[2024-10-28 09:01:15.752] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:15.752] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:16.181] [nrf_sbi] [info] 
+[2024-10-28 09:01:16.181] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:01:16.181] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:16.182] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:16.182] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:16.182] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:01:16.182] [nrf_app] [debug] NF update for Heartbeat, current time 1730077276182
+[2024-10-28 09:01:16.182] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:16.182] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:16.626] [nrf_sbi] [info] 
+[2024-10-28 09:01:16.627] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:01:16.627] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:16.627] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:16.627] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:16.627] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:01:16.627] [nrf_app] [debug] NF update for Heartbeat, current time 1730077276627
+[2024-10-28 09:01:16.627] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:16.627] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:17.421] [nrf_sbi] [info] 
+[2024-10-28 09:01:17.422] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:01:17.422] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:17.422] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:17.422] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:17.422] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:01:17.422] [nrf_app] [debug] NF update for Heartbeat, current time 1730077277422
+[2024-10-28 09:01:17.422] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:17.422] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:17.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077277505, current ms 1730077277518
+[2024-10-28 09:01:17.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077277732, current ms 1730077277745
+[2024-10-28 09:01:18.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077278165, current ms 1730077278178
+[2024-10-28 09:01:18.612] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077278599, current ms 1730077278612
+[2024-10-28 09:01:19.483] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077279470, current ms 1730077279483
+[2024-10-28 09:01:19.974] [nrf_sbi] [info] 
+[2024-10-28 09:01:19.974] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:01:19.974] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:19.974] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:19.974] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:19.974] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:01:19.974] [nrf_app] [debug] NF update for Heartbeat, current time 1730077279974
+[2024-10-28 09:01:19.974] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:19.974] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:22.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077282022, current ms 1730077282035
+[2024-10-28 09:01:25.522] [nrf_sbi] [info] 
+[2024-10-28 09:01:25.522] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:01:25.522] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:25.522] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:25.522] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:25.522] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:01:25.522] [nrf_app] [debug] NF update for Heartbeat, current time 1730077285522
+[2024-10-28 09:01:25.522] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:25.522] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:25.754] [nrf_sbi] [info] 
+[2024-10-28 09:01:25.754] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:01:25.754] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:25.754] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:25.754] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:25.754] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:01:25.754] [nrf_app] [debug] NF update for Heartbeat, current time 1730077285754
+[2024-10-28 09:01:25.754] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:25.754] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:26.183] [nrf_sbi] [info] 
+[2024-10-28 09:01:26.183] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:01:26.183] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:26.183] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:26.183] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:26.183] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:01:26.183] [nrf_app] [debug] NF update for Heartbeat, current time 1730077286183
+[2024-10-28 09:01:26.183] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:26.183] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:26.630] [nrf_sbi] [info] 
+[2024-10-28 09:01:26.630] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:01:26.630] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:26.630] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:26.630] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:26.630] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:01:26.630] [nrf_app] [debug] NF update for Heartbeat, current time 1730077286630
+[2024-10-28 09:01:26.630] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:26.630] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:27.424] [nrf_sbi] [info] 
+[2024-10-28 09:01:27.424] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:01:27.424] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:27.424] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:27.424] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:27.424] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:01:27.424] [nrf_app] [debug] NF update for Heartbeat, current time 1730077287424
+[2024-10-28 09:01:27.424] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:27.424] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:27.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077287505, current ms 1730077287518
+[2024-10-28 09:01:27.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077287732, current ms 1730077287745
+[2024-10-28 09:01:28.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077288165, current ms 1730077288178
+[2024-10-28 09:01:28.612] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077288599, current ms 1730077288612
+[2024-10-28 09:01:29.483] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077289470, current ms 1730077289483
+[2024-10-28 09:01:29.975] [nrf_sbi] [info] 
+[2024-10-28 09:01:29.975] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:01:29.975] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:29.975] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:29.975] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:29.975] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:01:29.975] [nrf_app] [debug] NF update for Heartbeat, current time 1730077289975
+[2024-10-28 09:01:29.975] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:29.975] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:32.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077292022, current ms 1730077292035
+[2024-10-28 09:01:35.523] [nrf_sbi] [info] 
+[2024-10-28 09:01:35.524] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:01:35.524] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:35.524] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:35.524] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:35.524] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:01:35.524] [nrf_app] [debug] NF update for Heartbeat, current time 1730077295524
+[2024-10-28 09:01:35.524] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:35.524] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:35.755] [nrf_sbi] [info] 
+[2024-10-28 09:01:35.755] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:01:35.755] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:35.755] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:35.755] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:35.756] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:01:35.756] [nrf_app] [debug] NF update for Heartbeat, current time 1730077295756
+[2024-10-28 09:01:35.756] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:35.756] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:36.185] [nrf_sbi] [info] 
+[2024-10-28 09:01:36.185] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:01:36.185] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:36.185] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:36.185] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:36.185] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:01:36.185] [nrf_app] [debug] NF update for Heartbeat, current time 1730077296185
+[2024-10-28 09:01:36.186] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:36.186] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:36.634] [nrf_sbi] [info] 
+[2024-10-28 09:01:36.634] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:01:36.634] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:36.634] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:36.634] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:36.634] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:01:36.634] [nrf_app] [debug] NF update for Heartbeat, current time 1730077296634
+[2024-10-28 09:01:36.634] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:36.634] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:37.424] [nrf_sbi] [info] 
+[2024-10-28 09:01:37.424] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:01:37.424] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:37.424] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:37.424] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:37.424] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:01:37.424] [nrf_app] [debug] NF update for Heartbeat, current time 1730077297424
+[2024-10-28 09:01:37.424] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:37.424] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:37.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077297505, current ms 1730077297518
+[2024-10-28 09:01:37.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077297732, current ms 1730077297745
+[2024-10-28 09:01:38.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077298165, current ms 1730077298178
+[2024-10-28 09:01:38.612] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077298599, current ms 1730077298612
+[2024-10-28 09:01:39.483] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077299470, current ms 1730077299483
+[2024-10-28 09:01:39.975] [nrf_sbi] [info] 
+[2024-10-28 09:01:39.975] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:01:39.975] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:39.975] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:39.975] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:39.975] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:01:39.975] [nrf_app] [debug] NF update for Heartbeat, current time 1730077299975
+[2024-10-28 09:01:39.975] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:39.975] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:42.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077302022, current ms 1730077302035
+[2024-10-28 09:01:45.525] [nrf_sbi] [info] 
+[2024-10-28 09:01:45.525] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:01:45.525] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:45.525] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:45.525] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:45.525] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:01:45.525] [nrf_app] [debug] NF update for Heartbeat, current time 1730077305525
+[2024-10-28 09:01:45.525] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:45.525] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:45.757] [nrf_sbi] [info] 
+[2024-10-28 09:01:45.757] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:01:45.757] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:45.757] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:45.757] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:45.757] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:01:45.757] [nrf_app] [debug] NF update for Heartbeat, current time 1730077305757
+[2024-10-28 09:01:45.757] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:45.757] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:46.186] [nrf_sbi] [info] 
+[2024-10-28 09:01:46.186] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:01:46.186] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:46.186] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:46.186] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:46.186] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:01:46.186] [nrf_app] [debug] NF update for Heartbeat, current time 1730077306186
+[2024-10-28 09:01:46.186] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:46.186] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:46.637] [nrf_sbi] [info] 
+[2024-10-28 09:01:46.637] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:01:46.637] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:46.637] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:46.637] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:46.637] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:01:46.637] [nrf_app] [debug] NF update for Heartbeat, current time 1730077306637
+[2024-10-28 09:01:46.637] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:46.637] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:47.424] [nrf_sbi] [info] 
+[2024-10-28 09:01:47.424] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:01:47.424] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:47.424] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:47.424] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:47.424] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:01:47.424] [nrf_app] [debug] NF update for Heartbeat, current time 1730077307424
+[2024-10-28 09:01:47.424] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:47.424] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:47.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077307505, current ms 1730077307518
+[2024-10-28 09:01:47.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077307732, current ms 1730077307745
+[2024-10-28 09:01:48.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077308165, current ms 1730077308178
+[2024-10-28 09:01:48.612] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077308599, current ms 1730077308612
+[2024-10-28 09:01:49.483] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077309470, current ms 1730077309483
+[2024-10-28 09:01:49.975] [nrf_sbi] [info] 
+[2024-10-28 09:01:49.975] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:01:49.975] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:49.975] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:49.975] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:49.975] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:01:49.975] [nrf_app] [debug] NF update for Heartbeat, current time 1730077309975
+[2024-10-28 09:01:49.975] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:49.975] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:52.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077312022, current ms 1730077312035
+[2024-10-28 09:01:55.527] [nrf_sbi] [info] 
+[2024-10-28 09:01:55.527] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:01:55.527] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:55.527] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:55.527] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:55.527] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:01:55.527] [nrf_app] [debug] NF update for Heartbeat, current time 1730077315527
+[2024-10-28 09:01:55.527] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:55.527] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:55.759] [nrf_sbi] [info] 
+[2024-10-28 09:01:55.759] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:01:55.759] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:55.759] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:55.759] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:55.760] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:01:55.760] [nrf_app] [debug] NF update for Heartbeat, current time 1730077315760
+[2024-10-28 09:01:55.760] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:55.760] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:56.187] [nrf_sbi] [info] 
+[2024-10-28 09:01:56.187] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:01:56.187] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:56.187] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:56.187] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:56.187] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:01:56.187] [nrf_app] [debug] NF update for Heartbeat, current time 1730077316187
+[2024-10-28 09:01:56.187] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:56.188] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:56.641] [nrf_sbi] [info] 
+[2024-10-28 09:01:56.641] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:01:56.641] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:56.641] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:56.641] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:56.641] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:01:56.641] [nrf_app] [debug] NF update for Heartbeat, current time 1730077316641
+[2024-10-28 09:01:56.641] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:56.641] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:57.424] [nrf_sbi] [info] 
+[2024-10-28 09:01:57.424] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:01:57.424] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:57.424] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:57.424] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:57.424] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:01:57.424] [nrf_app] [debug] NF update for Heartbeat, current time 1730077317424
+[2024-10-28 09:01:57.424] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:57.425] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:01:57.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077317505, current ms 1730077317518
+[2024-10-28 09:01:57.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077317732, current ms 1730077317745
+[2024-10-28 09:01:58.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077318165, current ms 1730077318178
+[2024-10-28 09:01:58.612] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077318599, current ms 1730077318612
+[2024-10-28 09:01:59.483] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077319470, current ms 1730077319483
+[2024-10-28 09:01:59.975] [nrf_sbi] [info] 
+[2024-10-28 09:01:59.975] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:01:59.975] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:01:59.975] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:01:59.975] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:01:59.975] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:01:59.975] [nrf_app] [debug] NF update for Heartbeat, current time 1730077319975
+[2024-10-28 09:01:59.975] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:01:59.975] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:02.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077322022, current ms 1730077322035
+[2024-10-28 09:02:05.531] [nrf_sbi] [info] 
+[2024-10-28 09:02:05.531] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:02:05.531] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:05.531] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:05.531] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:05.531] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:02:05.531] [nrf_app] [debug] NF update for Heartbeat, current time 1730077325531
+[2024-10-28 09:02:05.531] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:05.531] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:05.760] [nrf_sbi] [info] 
+[2024-10-28 09:02:05.760] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:02:05.760] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:05.760] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:05.760] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:05.760] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:02:05.760] [nrf_app] [debug] NF update for Heartbeat, current time 1730077325760
+[2024-10-28 09:02:05.760] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:05.760] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:06.191] [nrf_sbi] [info] 
+[2024-10-28 09:02:06.191] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:02:06.191] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:06.191] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:06.191] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:06.191] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:02:06.191] [nrf_app] [debug] NF update for Heartbeat, current time 1730077326191
+[2024-10-28 09:02:06.191] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:06.191] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:06.643] [nrf_sbi] [info] 
+[2024-10-28 09:02:06.643] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:02:06.643] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:06.643] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:06.643] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:06.643] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:02:06.643] [nrf_app] [debug] NF update for Heartbeat, current time 1730077326643
+[2024-10-28 09:02:06.643] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:06.643] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:07.425] [nrf_sbi] [info] 
+[2024-10-28 09:02:07.425] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:02:07.425] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:07.425] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:07.425] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:07.425] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:02:07.425] [nrf_app] [debug] NF update for Heartbeat, current time 1730077327425
+[2024-10-28 09:02:07.425] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:07.425] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:07.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077327505, current ms 1730077327518
+[2024-10-28 09:02:07.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077327732, current ms 1730077327745
+[2024-10-28 09:02:08.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077328165, current ms 1730077328178
+[2024-10-28 09:02:08.612] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077328599, current ms 1730077328612
+[2024-10-28 09:02:09.483] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077329470, current ms 1730077329483
+[2024-10-28 09:02:09.975] [nrf_sbi] [info] 
+[2024-10-28 09:02:09.975] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:02:09.976] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:09.976] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:09.976] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:09.976] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:02:09.976] [nrf_app] [debug] NF update for Heartbeat, current time 1730077329976
+[2024-10-28 09:02:09.976] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:09.976] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:12.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077332022, current ms 1730077332035
+[2024-10-28 09:02:15.532] [nrf_sbi] [info] 
+[2024-10-28 09:02:15.532] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:02:15.532] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:15.532] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:15.532] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:15.532] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:02:15.532] [nrf_app] [debug] NF update for Heartbeat, current time 1730077335532
+[2024-10-28 09:02:15.532] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:15.532] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:15.761] [nrf_sbi] [info] 
+[2024-10-28 09:02:15.761] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:02:15.761] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:15.761] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:15.761] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:15.761] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:02:15.761] [nrf_app] [debug] NF update for Heartbeat, current time 1730077335761
+[2024-10-28 09:02:15.761] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:15.761] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:16.192] [nrf_sbi] [info] 
+[2024-10-28 09:02:16.192] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:02:16.192] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:16.192] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:16.192] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:16.192] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:02:16.192] [nrf_app] [debug] NF update for Heartbeat, current time 1730077336192
+[2024-10-28 09:02:16.192] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:16.192] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:16.646] [nrf_sbi] [info] 
+[2024-10-28 09:02:16.646] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:02:16.646] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:16.646] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:16.646] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:16.646] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:02:16.646] [nrf_app] [debug] NF update for Heartbeat, current time 1730077336646
+[2024-10-28 09:02:16.646] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:16.646] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:17.425] [nrf_sbi] [info] 
+[2024-10-28 09:02:17.425] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:02:17.425] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:17.425] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:17.425] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:17.425] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:02:17.425] [nrf_app] [debug] NF update for Heartbeat, current time 1730077337425
+[2024-10-28 09:02:17.425] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:17.426] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:17.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077337505, current ms 1730077337518
+[2024-10-28 09:02:17.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077337732, current ms 1730077337745
+[2024-10-28 09:02:18.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077338165, current ms 1730077338178
+[2024-10-28 09:02:18.612] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1, time 1730077338599, current ms 1730077338612
+[2024-10-28 09:02:19.483] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 5290fb87-dc05-4119-8b2f-cb61a5f13058, time 1730077339470, current ms 1730077339483
+[2024-10-28 09:02:19.976] [nrf_sbi] [info] 
+[2024-10-28 09:02:19.976] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: b471cef5-cdd5-4e9d-b87e-fa94123e74a7
+[2024-10-28 09:02:19.976] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:19.976] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:19.976] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:19.976] [nrf_app] [info] Updated the NF profile (profile ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7)
+[2024-10-28 09:02:19.976] [nrf_app] [debug] NF update for Heartbeat, current time 1730077339976
+[2024-10-28 09:02:19.976] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:19.976] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:22.035] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID b471cef5-cdd5-4e9d-b87e-fa94123e74a7, time 1730077342022, current ms 1730077342035
+[2024-10-28 09:02:25.534] [nrf_sbi] [info] 
+[2024-10-28 09:02:25.534] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 84576f00-142d-42b7-af9f-b3b96943fedb
+[2024-10-28 09:02:25.534] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:25.534] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:25.534] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:25.534] [nrf_app] [info] Updated the NF profile (profile ID 84576f00-142d-42b7-af9f-b3b96943fedb)
+[2024-10-28 09:02:25.534] [nrf_app] [debug] NF update for Heartbeat, current time 1730077345534
+[2024-10-28 09:02:25.534] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:25.534] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:25.762] [nrf_sbi] [info] 
+[2024-10-28 09:02:25.762] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f
+[2024-10-28 09:02:25.762] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:25.762] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:25.762] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:25.762] [nrf_app] [info] Updated the NF profile (profile ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f)
+[2024-10-28 09:02:25.762] [nrf_app] [debug] NF update for Heartbeat, current time 1730077345762
+[2024-10-28 09:02:25.762] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:25.762] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:26.194] [nrf_sbi] [info] 
+[2024-10-28 09:02:26.194] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: bdea5a64-df45-42eb-bbd9-ff1f1723d5d0
+[2024-10-28 09:02:26.194] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:26.194] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:26.194] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:26.194] [nrf_app] [info] Updated the NF profile (profile ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0)
+[2024-10-28 09:02:26.194] [nrf_app] [debug] NF update for Heartbeat, current time 1730077346194
+[2024-10-28 09:02:26.194] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:26.194] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:26.649] [nrf_sbi] [info] 
+[2024-10-28 09:02:26.649] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1
+[2024-10-28 09:02:26.649] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:26.649] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:26.649] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:26.649] [nrf_app] [info] Updated the NF profile (profile ID 08ff04cd-1d31-4ab3-b3b3-eeafa0319cc1)
+[2024-10-28 09:02:26.649] [nrf_app] [debug] NF update for Heartbeat, current time 1730077346649
+[2024-10-28 09:02:26.649] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:26.649] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:27.426] [nrf_sbi] [info] 
+[2024-10-28 09:02:27.426] [nrf_sbi] [info] Got a request to update an NF instance, Instance ID: 5290fb87-dc05-4119-8b2f-cb61a5f13058
+[2024-10-28 09:02:27.426] [nrf_app] [info] Handle Update NF Instance request (HTTP version 2)
+[2024-10-28 09:02:27.426] [nrf_app] [info] NF Heart-Beat procedure!
+[2024-10-28 09:02:27.426] [nrf_app] [debug] Replace member nfStatus with new value REGISTERED
+[2024-10-28 09:02:27.426] [nrf_app] [info] Updated the NF profile (profile ID 5290fb87-dc05-4119-8b2f-cb61a5f13058)
+[2024-10-28 09:02:27.426] [nrf_app] [debug] NF update for Heartbeat, current time 1730077347426
+[2024-10-28 09:02:27.426] [nrf_app] [debug] Set NF status to REGISTERED
+[2024-10-28 09:02:27.426] [nrf_sbi] [debug] Json data: null
+[2024-10-28 09:02:27.518] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 84576f00-142d-42b7-af9f-b3b96943fedb, time 1730077347505, current ms 1730077347518
+[2024-10-28 09:02:27.745] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID 9e60ecf7-9984-4d36-b00a-e111bf5ffa0f, time 1730077347732, current ms 1730077347745
+[2024-10-28 09:02:28.178] [nrf_app] [info] 
+Handle heartbeat timeout (NF update), NF instance ID bdea5a64-df45-42eb-bbd9-ff1f1723d5d0, time 1730077348165, current ms 1730077348178
