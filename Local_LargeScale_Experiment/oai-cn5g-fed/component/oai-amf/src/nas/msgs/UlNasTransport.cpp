@@ -79,8 +79,9 @@ void UlNasTransport::GetPayloadContainer(bstring& content) const {
 }
 
 //------------------------------------------------------------------------------
-bool UlNasTransport::GetPayloadContainerDID(bstring& did_payloadcontainer) const {
-return  ie_payload_container.GetValueDID(did_payloadcontainer);
+bool UlNasTransport::GetPayloadContainerDID(
+    bstring& did_payloadcontainer) const {
+  return ie_payload_container.GetValueDID(did_payloadcontainer);
 }
 
 //------------------------------------------------------------------------------
@@ -278,7 +279,6 @@ int UlNasTransport::Encode(uint8_t* buf, int len) {
   return encoded_size;
 }
 
-
 //------------------------------------------------------------------------------
 int UlNasTransport::Decode(uint8_t* buf, int len) {
   Logger::nas_mm().debug("Decoding UlNasTransport message");
@@ -318,8 +318,6 @@ int UlNasTransport::Decode(uint8_t* buf, int len) {
 
   // Decode other IEs
   uint8_t octet = 0x00;
-
-
 
   DECODE_U8_VALUE(buf + decoded_size, octet);
   Logger::nas_mm().debug("First option IEI (0x%x)", octet);
@@ -421,122 +419,132 @@ int UlNasTransport::Decode(uint8_t* buf, int len) {
         DECODE_U8_VALUE(buf + decoded_size, octet);
         Logger::nas_mm().debug("Next IEI (0x%x)", octet);
       } break;
-      //-----------------------------------------------------------------------------------------------------------
-      // **old version code for DID extraction**
-      
+        //-----------------------------------------------------------------------------------------------------------
+        // **old version code for DID extraction**
+
       case 0x44: {
-                Logger::nas_mm().debug("Decoding IEI 0x%x, also named did.doc\n", 0x44);
+        Logger::nas_mm().debug("Decoding IEI 0x%x, also named did.doc\n", 0x44);
 
-                // 您的调试信息
+        // 您的调试信息
 
-                //open the logs and append the time data =================================
-                std::ofstream file("timelogsDID.txt", std::ios::out | std::ios::app);
-                if (!file.is_open()){
-                  perror("failed to open file");
-                  exit(1);
-                }
+        // open the logs and append the time data
+        // =================================
+        std::ofstream file("timelogsDID.txt", std::ios::out | std::ios::app);
+        if (!file.is_open()) {
+          perror("failed to open file");
+          exit(1);
+        }
 
-                auto now = std::chrono::system_clock::now();
-                std::time_t now_c = std::chrono::system_clock::to_time_t(now);
-                auto microseconds = std::chrono::duration_cast<std::chrono::microseconds>(now.time_since_epoch())%1000000;
+        auto now          = std::chrono::system_clock::now();
+        std::time_t now_c = std::chrono::system_clock::to_time_t(now);
+        auto microseconds =
+            std::chrono::duration_cast<std::chrono::microseconds>(
+                now.time_since_epoch()) %
+            1000000;
 
-                //formulate the time
-                file << "开始解析U-DID时间" << ": "
-                      << std::put_time(std::localtime(&now_c),"%Y-%m-%d %H:%M:%S") << "."
-                      << std::setfill('0') << std::setw(6) << microseconds.count() << '\n';
+        // formulate the time
+        file << "开始解析U-DID时间" << ": "
+             << std::put_time(std::localtime(&now_c), "%Y-%m-%d %H:%M:%S")
+             << "." << std::setfill('0') << std::setw(6) << microseconds.count()
+             << '\n';
 
-                // file.close();
-                //open the logs and append the time data =================================
-                
-                
-                const int didNum = len - decoded_size;
-                char DID[didNum + 1]; // 加 1 以确保有空间放置 null 字符
-                for (int i = 0; i < didNum; i++) {
-                    DID[i] = *(buf + decoded_size + i);
-                }
-                DID[didNum] = '\0'; // 确保以 null 结尾
-                decoded_size += didNum;
-                std::string DID_str(DID, didNum);
-                std::string encodedDID = DID_str;
-                // 发送POST请求
-                std::cout << "argsValue:\n" << encodedDID << std::endl;
+        // file.close();
+        // open the logs and append the time data
+        // =================================
 
-                
-                    
-                // 您的调试信息
+        const int didNum = len - decoded_size;
+        char DID[didNum + 1];  // 加 1 以确保有空间放置 null 字符
+        for (int i = 0; i < didNum; i++) {
+          DID[i] = *(buf + decoded_size + i);
+        }
+        DID[didNum] = '\0';  // 确保以 null 结尾
+        decoded_size += didNum;
+        std::string DID_str(DID, didNum);
+        std::string encodedDID = DID_str;
+        // 发送POST请求
+        std::cout << "argsValue:\n" << encodedDID << std::endl;
 
-                //open the logs and append the time data =================================
-                // std::ofstream file("timelogsDID.txt", std::ios::out | std::ios::app);
-                // if (!file.is_open()){
-                //   perror("failed to open file");
-                //   exit(1);
-                // }
+        // 您的调试信息
 
-                now = std::chrono::system_clock::now();
-                now_c = std::chrono::system_clock::to_time_t(now);
-                microseconds = std::chrono::duration_cast<std::chrono::microseconds>(now.time_since_epoch())%1000000;
+        // open the logs and append the time data
+        // =================================
+        //  std::ofstream file("timelogsDID.txt", std::ios::out |
+        //  std::ios::app); if (!file.is_open()){
+        //    perror("failed to open file");
+        //    exit(1);
+        //  }
 
-                //formulate the time
-                file << "转发U-DID时间" << ": "
-                      << std::put_time(std::localtime(&now_c),"%Y-%m-%d %H:%M:%S") << "."
-                      << std::setfill('0') << std::setw(6) << microseconds.count() << '\n';
+        now          = std::chrono::system_clock::now();
+        now_c        = std::chrono::system_clock::to_time_t(now);
+        microseconds = std::chrono::duration_cast<std::chrono::microseconds>(
+                           now.time_since_epoch()) %
+                       1000000;
 
-                file.close();
-                //open the logs and append the time data =================================
+        // formulate the time
+        file << "转发U-DID时间" << ": "
+             << std::put_time(std::localtime(&now_c), "%Y-%m-%d %H:%M:%S")
+             << "." << std::setfill('0') << std::setw(6) << microseconds.count()
+             << '\n';
 
+        file.close();
+        // open the logs and append the time data
+        // =================================
 
-              CURL *curl;
-              CURLcode res;
-              curl = curl_easy_init();
-              if(curl) {
-                curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "POST");
-                // curl_easy_setopt(curl, CURLOPT_URL, "http://10.129.182.231:8004/dper/setdid");//ue udid registration
-                // curl_easy_setopt(curl, CURLOPT_URL, "http://192.168.1.2:8004/dper/setdid");//ue udid, demo address
-                curl_easy_setopt(curl, CURLOPT_URL, "http://172.17.0.1:8004/dper/setdid");//ue udid, local experiment address
-                // curl_easy_setopt(curl, CURLOPT_URL, "http://192.168.5.21:8004/dper/setdid");//ue udid, zaojianan address
-                // curl_easy_setopt(curl, CURLOPT_URL, "http://127.0.0.1:8004/dper/setdid");//ue udid, local experiment address, this address is
-                // curl_easy_setopt(curl, CURLOPT_URL, "http://10.122.218.38:8004/dper/setdid");//ue udid, shahe address
+        CURL* curl;
+        CURLcode res;
+        curl = curl_easy_init();
+        if (curl) {
+          curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "POST");
+          // curl_easy_setopt(curl, CURLOPT_URL,
+          // "http://10.129.182.231:8004/dper/setdid");//ue udid registration
+          // curl_easy_setopt(curl, CURLOPT_URL,
+          // "http://192.168.1.2:8004/dper/setdid");//ue udid, demo address
+          curl_easy_setopt(
+              curl, CURLOPT_URL,
+              "http://172.17.0.1:8004/dper/setdid");  // ue udid, local
+                                                      // experiment address
+          // curl_easy_setopt(curl, CURLOPT_URL,
+          // "http://192.168.5.21:8004/dper/setdid");//ue udid,  address
+          // curl_easy_setopt(curl, CURLOPT_URL,
+          // "http://127.0.0.1:8004/dper/setdid");//ue udid, local experiment
+          // address, this address is curl_easy_setopt(curl, CURLOPT_URL,
+          // "http://10.122.218.38:8004/dper/setdid");//ue udid,  address
 
+          curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+          curl_easy_setopt(curl, CURLOPT_DEFAULT_PROTOCOL, "https");
+          struct curl_slist* headers = NULL;
+          curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+          curl_mime* mime;
+          curl_mimepart* part;
+          mime = curl_mime_init(curl);
+          part = curl_mime_addpart(mime);
+          curl_mime_name(part, "DID");
 
-                curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
-                curl_easy_setopt(curl, CURLOPT_DEFAULT_PROTOCOL, "https");
-                struct curl_slist *headers = NULL;
-                curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
-                curl_mime *mime;
-                curl_mimepart *part;
-                mime = curl_mime_init(curl);
-                part = curl_mime_addpart(mime);
-                curl_mime_name(part, "DID");
-                
-                curl_mime_data(part, encodedDID.c_str(), encodedDID.length());
+          curl_mime_data(part, encodedDID.c_str(), encodedDID.length());
 
-                curl_easy_setopt(curl, CURLOPT_MIMEPOST, mime);
-                
-                // failure management
-                res = curl_easy_perform(curl);
+          curl_easy_setopt(curl, CURLOPT_MIMEPOST, mime);
 
+          // failure management
+          res = curl_easy_perform(curl);
 
-                // CURLcode res = curl_easy_perform(curl);
-                if(res != CURLE_OK) {
-                    Logger::nas_mm().error("curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
-                } else {
-                    Logger::nas_mm().debug("Request succeeded.");
-                }
-                
-                curl_mime_free(mime);
-              }
-              curl_easy_cleanup(curl);
+          // CURLcode res = curl_easy_perform(curl);
+          if (res != CURLE_OK) {
+            Logger::nas_mm().error(
+                "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
+          } else {
+            Logger::nas_mm().debug("Request succeeded.");
+          }
 
+          curl_mime_free(mime);
+        }
+        curl_easy_cleanup(curl);
 
+        Logger::nas_mm().debug("Accessed P3-chain");
+        octet = *(buf + decoded_size);
+        Logger::nas_mm().debug("Next IEI 0x%x", octet);
 
-
-              Logger::nas_mm().debug("Accessed P3-chain");
-                octet = *(buf + decoded_size);
-              Logger::nas_mm().debug("Next IEI 0x%x", octet);
-
-            } break;
-      // ------------------------------------------------------------------------------------------------------------
-
+      } break;
+        // ------------------------------------------------------------------------------------------------------------
 
       default: {
         // TODO:
