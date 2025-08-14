@@ -1,4 +1,63 @@
-# TUTORIAL STEP BY STEP
+# U-DID-Infocom2026 Project
+
+## Project Overview
+This project implements an OAI (OpenAirInterface) based Unique Decentralized Identifiers (U-DID) experiment framework for large-scale local deployment and cloud-based experiments.
+
+## Project Structure
+
+```
+U-DID-Infocom2026-990218/
+├── Local_LargeScale_Experiment/          # Main experiment environment
+│   ├── P3chainforOai-main/               # P3-Chain blockchain implementation
+│   │   ├── dper/                         # Distributed processing and RPC services
+│   │   │   ├── client/                   # Client binaries and executables
+│   │   │   ├── configer/                 # Configuration management
+│   │   │   ├── rpc/                      # RPC service implementation
+│   │   │   └── transactionCheck/         # Transaction validation and pooling
+│   │   └── README.md
+│   ├── UERANSIM_withDID/                 # UE and gNB simulator with DID support
+│   │   ├── config/                       # Configuration files for different setups
+│   │   ├── src/                          # Source code for UE and gNB simulation
+│   │   ├── tools/                        # ASN.1 definitions and tools
+│   │   └── validate_did_code.py          # DID validation script
+│   ├── UERANSIM_withoutDID/              # UE and gNB simulator without DID (baseline)
+│   │   ├── config/                       # Configuration files
+│   │   ├── src/                          # Source code for simulation
+│   │   └── tools/                        # ASN.1 definitions and tools
+│   ├── multiple_UEs/                     # Multiple UE experiment setup
+│   │   ├── openairinterface5g/           # OAI 5G implementation with DID
+│   │   ├── openairinterface5g_withoutDID/ # OAI 5G baseline implementation
+│   │   ├── didserver_local/              # Local DID server instances (ports 8080-8180)
+│   │   ├── compiled_binaries_withDID/    # Pre-compiled UE binaries with DID
+│   │   ├── compiled_binaries_withoutDID/ # Pre-compiled UE binaries without DID
+│   │   ├── tps_test_client-main/         # TPS testing and performance monitoring
+│   │   ├── multiple_UE_*.py              # Scripts for managing multiple UE instances
+│   │   ├── timegrep_*.py                 # Time measurement and log analysis scripts
+│   │   └── monitor_*.py                  # System monitoring scripts
+│   └── oai-cn5g-fed/                     # OAI 5G Core Network Federation
+│       ├── component/                    # Core network function components (AMF, SMF, etc.)
+│       ├── docker-compose/               # Docker deployment configurations
+│       ├── ci-scripts/                   # CI/CD and testing scripts
+│       └── docs/                         # Documentation for deployment scenarios
+└── README.md                             # This file
+```
+
+### Key Components
+
+- **P3chainforOai-main**: Blockchain infrastructure for decentralized identity management
+- **UERANSIM**: 5G UE and gNB simulator supporting both DID-enabled and baseline scenarios
+- **multiple_UEs**: Large-scale experiment framework supporting up to 100+ concurrent UEs
+- **oai-cn5g-fed**: OpenAirInterface 5G Core Network with DID integration
+- **Performance Monitoring**: CPU, memory, and latency measurement tools
+- **DID Server**: Local distributed identity server instances for scalability testing
+
+<!-- ### Experiment Scenarios
+
+1. **UERANSIM Era**: Container-based UE simulation with DID integration
+2. **OpenAirInterface Era**: Native 5G stack implementation with DID support
+3. **Multiple UE Testing**: Large-scale concurrent user simulation and performance analysis -->
+
+## TUTORIAL STEP BY STEP
 This tutorial is for helping you to construct a OAI-based Unique Decentrailzed Identifiers local large scale experiment
 - Of course, these code also can deploy for cloud based experiment.
 
