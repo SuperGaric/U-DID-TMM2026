@@ -1,4 +1,4 @@
-# U-DID-Infocom2026 Project
+# U-DID-TMM2026 Project
 
 ## Project Overview
 This project implements an OAI (OpenAirInterface) based Unique Decentralized Identifiers (U-DID) experiment framework for large-scale local deployment and cloud-based experiments.
